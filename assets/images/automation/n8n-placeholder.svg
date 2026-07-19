@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc">
+  <title id="title">n8n Workflow placeholder</title>
+  <desc id="desc">Replace this placeholder with the final project or certificate image.</desc>
+  <rect width="1200" height="750" fill="#f6f2e9"/>
+  <path d="M0 590C200 470 330 690 570 550s380-10 630-130v330H0Z" fill="#f0ecdf"/>
+  <circle cx="1010" cy="125" r="150" fill="#c9856f" opacity="0.10"/>
+  <circle cx="1030" cy="130" r="72" fill="#c9856f" opacity="0.12"/>
+  <rect x="95" y="105" width="1010" height="540" rx="36" fill="#fffdf8" stroke="#d8d2c3" stroke-width="4"/>
+  <rect x="150" y="160" width="250" height="48" rx="24" fill="#c9856f" opacity="0.12"/>
+  <circle cx="178" cy="184" r="10" fill="#c9856f"/>
+  <rect x="205" y="176" width="145" height="16" rx="8" fill="#c9856f" opacity="0.55"/>
+  <rect x="150" y="270" width="610" height="34" rx="17" fill="#171714" opacity="0.92"/>
+  <rect x="150" y="325" width="470" height="20" rx="10" fill="#6f6b61" opacity="0.52"/>
+  <rect x="150" y="363" width="540" height="20" rx="10" fill="#6f6b61" opacity="0.32"/>
+  <rect x="150" y="450" width="210" height="64" rx="16" fill="#c9856f"/>
+  <rect x="385" y="450" width="210" height="64" rx="16" fill="#fffdf8" stroke="#d8d2c3" stroke-width="4"/>
+  <text x="150" y="590" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" fill="#171714">n8n Workflow</text>
+  <text x="150" y="628" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#6f6b61">Replace with an automation workflow screenshot</text>
+</svg>

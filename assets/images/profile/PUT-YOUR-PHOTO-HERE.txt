@@ -1,0 +1,21 @@
+PROFILE PHOTO REPLACEMENT GUIDE
+
+1. Copy your real profile picture into this folder.
+   Recommended filename: leanne-profile.webp
+
+2. Open js/script.js.
+
+3. Find the clearly labeled PROFILE PHOTO object near the top:
+
+   const profilePhoto = {
+     src: 'assets/images/profile/profile-photo-placeholder.svg',
+     ...
+   };
+
+4. Change only the src value, for example:
+
+   src: 'assets/images/profile/leanne-profile.webp',
+
+The same photo will automatically appear in both the Hero and About sections.
+You can independently adjust the visible crop using heroObjectPosition and
+aboutObjectPosition. Examples: 'center top', '50% 20%', or 'center center'.

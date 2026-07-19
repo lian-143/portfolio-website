@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Project process placeholder</title>
+  <desc id="desc">An abstract workflow placeholder with connected cards.</desc>
+  <rect width="1600" height="1000" fill="#cad8e5"/>
+  <path d="M365 500h300m270 0h300" stroke="#171714" stroke-width="10" stroke-linecap="round" stroke-dasharray="18 24"/>
+  <circle cx="220" cy="500" r="150" fill="#fffdf8" stroke="#171714" stroke-width="4"/>
+  <rect x="610" y="330" width="380" height="340" rx="42" fill="#eee72b" stroke="#171714" stroke-width="4"/>
+  <circle cx="1380" cy="500" r="150" fill="#fffdf8" stroke="#171714" stroke-width="4"/>
+  <circle cx="220" cy="500" r="45" fill="#171714"/>
+  <rect x="700" y="420" width="200" height="28" rx="14" fill="#171714"/>
+  <rect x="700" y="485" width="150" height="20" rx="10" fill="#171714" opacity=".5"/>
+  <rect x="700" y="535" width="210" height="20" rx="10" fill="#171714" opacity=".5"/>
+  <path d="m1332 500 34 34 70-78" fill="none" stroke="#171714" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="885" fill="#171714" font-family="Arial, Helvetica, sans-serif" font-size="48" font-weight="700">PROCESS IMAGE PLACEHOLDER</text>
+</svg>

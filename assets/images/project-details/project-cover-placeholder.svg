@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Project cover placeholder</title>
+  <desc id="desc">A neutral abstract placeholder image for a project cover.</desc>
+  <rect width="1600" height="1200" fill="#e8e3d8"/>
+  <circle cx="1300" cy="210" r="270" fill="#eee72b"/>
+  <rect x="150" y="155" width="920" height="680" rx="54" fill="#fffdf8" stroke="#171714" stroke-width="4"/>
+  <rect x="230" y="255" width="570" height="42" rx="21" fill="#171714"/>
+  <rect x="230" y="345" width="730" height="24" rx="12" fill="#c4c0b7"/>
+  <rect x="230" y="397" width="610" height="24" rx="12" fill="#c4c0b7"/>
+  <rect x="230" y="485" width="340" height="230" rx="28" fill="#d9cde7"/>
+  <rect x="610" y="485" width="350" height="230" rx="28" fill="#cbdcc9"/>
+  <path d="M1170 760h260v260h-260z" fill="#171714" opacity=".9"/>
+  <text x="150" y="1040" fill="#171714" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700">PROJECT COVER PLACEHOLDER</text>
+  <text x="150" y="1105" fill="#69665f" font-family="Arial, Helvetica, sans-serif" font-size="30">Replace this file path inside js/script.js</text>
+</svg>

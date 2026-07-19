@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Project result placeholder</title>
+  <desc id="desc">An abstract analytics-style placeholder image.</desc>
+  <rect width="1600" height="1000" fill="#dab8a8"/>
+  <rect x="130" y="130" width="1340" height="740" rx="56" fill="#fffdf8" stroke="#171714" stroke-width="4"/>
+  <rect x="220" y="220" width="340" height="90" rx="24" fill="#171714"/>
+  <rect x="620" y="220" width="260" height="90" rx="24" fill="#eee72b" stroke="#171714" stroke-width="3"/>
+  <rect x="940" y="220" width="440" height="90" rx="24" fill="#e8e3d8"/>
+  <path d="M260 720 470 590l180 60 230-260 190 120 250-210" fill="none" stroke="#171714" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="470" cy="590" r="24" fill="#eee72b" stroke="#171714" stroke-width="8"/>
+  <circle cx="880" cy="390" r="24" fill="#eee72b" stroke="#171714" stroke-width="8"/>
+  <circle cx="1320" cy="300" r="24" fill="#eee72b" stroke="#171714" stroke-width="8"/>
+  <text x="220" y="805" fill="#69665f" font-family="Arial, Helvetica, sans-serif" font-size="38">RESULT IMAGE PLACEHOLDER</text>
+</svg>

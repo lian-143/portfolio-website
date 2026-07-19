@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Google Gemini logo placeholder</title>
+  <desc id="desc">Replaceable local placeholder image for Google Gemini.</desc>
+  <rect width="120" height="120" rx="28" fill="#f0ecdf"/>
+  <rect x="8" y="8" width="104" height="104" rx="22" fill="#fffdf8" stroke="#d5cfbf" stroke-width="3"/>
+  <circle cx="60" cy="54" r="31" fill="#171714"/>
+  <text x="60" y="65" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800" fill="#fffdf8">GM</text>
+  <text x="60" y="100" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.2" fill="#6f6b61">LOGO</text>
+</svg>
