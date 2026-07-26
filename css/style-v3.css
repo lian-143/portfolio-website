@@ -73,7 +73,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 0;
   overflow-x: hidden;
   background: var(--color-background);
   color: var(--color-text);
@@ -2771,4 +2771,426 @@ body.modal-open {
 .tool-logo-image {
   object-fit: contain;
   object-position: center;
+}
+
+/* ============================================================
+   RESPONSIVE HARDENING
+   Keeps the existing visual design while preventing overflow,
+   clipped text, narrow-grid issues, and embed problems on phones,
+   tablets, laptops, large monitors, and touch devices.
+   ============================================================ */
+
+html,
+body {
+  max-width: 100%;
+}
+
+main,
+section,
+header,
+footer,
+.container,
+.layout-container,
+.header-inner,
+.hero-grid,
+.about-editorial-grid,
+.services-grid,
+.projects-grid,
+.skills-grid,
+.certifications-grid,
+.contact-section > .layout-container {
+  min-width: 0;
+}
+
+.container > *,
+.layout-container > *,
+.header-inner > *,
+.hero-grid > *,
+.about-editorial-grid > *,
+.services-grid > *,
+.projects-grid > *,
+.skills-grid > *,
+.certifications-grid > *,
+.contact-section > .layout-container > * {
+  min-width: 0;
+}
+
+img,
+video,
+canvas,
+iframe,
+embed,
+object {
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+a,
+button,
+span {
+  overflow-wrap: anywhere;
+}
+
+.button,
+.filter-button,
+.theme-toggle,
+.nav-toggle,
+.contact-social-link,
+.hero-social-link,
+.footer-social-link {
+  touch-action: manipulation;
+}
+
+.button {
+  max-width: 100%;
+  text-align: center;
+}
+
+.availability-badge {
+  max-width: 100%;
+  line-height: 1.35;
+  white-space: normal;
+}
+
+.project-card,
+.certification-card {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+}
+
+.project-card-body,
+.certification-card-body {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  flex-direction: column;
+}
+
+.project-card-body .project-actions,
+.certification-card-body .button {
+  margin-top: auto;
+}
+
+.project-card-body > p,
+.certification-card-body > p {
+  max-width: 100%;
+}
+
+.tag-list span {
+  max-width: 100%;
+  white-space: normal;
+}
+
+.project-image-wrapper,
+.certificate-image-wrapper {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.calendly-inline-widget,
+.calendly-inline-widget iframe {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.calendly-inline-widget {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.primary-nav {
+  overscroll-behavior: contain;
+}
+
+@media (max-width: 1120px) {
+  .primary-nav {
+    right: max(1rem, env(safe-area-inset-right));
+    left: max(1rem, env(safe-area-inset-left));
+    max-height: calc(100vh - var(--header-height) - 2rem);
+    max-height: calc(100dvh - var(--header-height) - 2rem);
+  }
+
+  .nav-list,
+  .nav-list li,
+  .nav-link {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero .title-line {
+    white-space: normal;
+  }
+
+  .hero-grid {
+    gap: clamp(2.5rem, 7vw, 4rem);
+  }
+
+  .hero-visual {
+    min-height: clamp(24rem, 88vw, 34rem);
+  }
+
+  .project-section-header {
+    width: 100%;
+  }
+
+  .project-section-header > div:first-child,
+  #automation-projects .project-section-header > div:first-child {
+    width: 100%;
+  }
+
+  .experience-card {
+    gap: 2rem;
+  }
+
+  .calendly-inline-widget {
+    min-height: 680px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-title-line {
+    white-space: normal;
+  }
+
+  .about-sidebar .check-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-sidebar .check-list li + li {
+    margin-top: 0;
+  }
+
+  .project-modal-toolbar > span {
+    max-width: calc(100% - 4rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .section-heading,
+  .project-section-header,
+  .section-heading-centered {
+    margin-bottom: 2.25rem;
+  }
+
+  .availability-badge {
+    align-items: flex-start;
+    padding: 0.62rem 0.78rem;
+    font-size: 0.7rem;
+  }
+
+  .availability-dot {
+    flex: 0 0 auto;
+    margin-top: 0.22rem;
+  }
+
+  .hero-description,
+  .about-editorial-bio,
+  .contact-section > .layout-container .contact-content > p:not(.section-label) {
+    font-size: 1rem;
+  }
+
+  .hero-visual {
+    width: min(100%, 31rem);
+    min-height: clamp(22rem, 116vw, 30rem);
+  }
+
+  .portrait-frame {
+    inset: 2% 6% 2% 2%;
+  }
+
+  .portrait-backdrop {
+    inset: 7% 1% 5% 7%;
+  }
+
+  .filter-group {
+    gap: 0.5rem;
+  }
+
+  .filter-button {
+    min-height: 2.75rem;
+  }
+
+  .project-card-body,
+  .certification-card-body,
+  .service-card,
+  .skill-card {
+    padding: 1.2rem;
+  }
+
+  .project-actions {
+    width: 100%;
+  }
+
+  .project-actions .button,
+  .certification-card .button,
+  .contact-actions .button {
+    width: 100%;
+  }
+
+  .contact-social-links {
+    width: 100%;
+  }
+
+  .calendly-inline-widget {
+    height: 680px !important;
+    min-height: 680px;
+  }
+
+  .project-modal-hero,
+  .project-detail-sections,
+  .project-modal-metrics-section,
+  .project-modal-gallery-section {
+    padding-right: max(1rem, env(safe-area-inset-right));
+    padding-left: max(1rem, env(safe-area-inset-left));
+  }
+}
+
+@media (max-width: 440px) {
+  :root {
+    --page-gutter: 1rem;
+  }
+
+  .header-inner {
+    gap: 0.45rem;
+  }
+
+  .brand-mark,
+  .theme-toggle,
+  .nav-toggle {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+
+  .hero {
+    padding-top: 2.75rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 11.5vw, 3.1rem);
+  }
+
+  .hero-role {
+    min-height: 3.2rem;
+    font-size: 1.08rem;
+  }
+
+  .hero-social-links {
+    gap: 0.65rem;
+  }
+
+  .hero-social-link {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+
+  .contact-social-links {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-social-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tag-list {
+    gap: 0.38rem;
+  }
+
+  .tag-list span {
+    min-height: 1.9rem;
+    padding: 0.34rem 0.58rem;
+    font-size: 0.72rem;
+  }
+
+  .project-card-body h4,
+  .certification-card-body h3 {
+    line-height: 1.15;
+  }
+
+  .footer-social-link {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --page-gutter: 0.85rem;
+  }
+
+  .section {
+    padding-block: 3.6rem;
+  }
+
+  .hero h1 {
+    font-size: 2.15rem;
+  }
+
+  .contact-section > .layout-container .contact-content h2,
+  .about-editorial h2,
+  h2 {
+    font-size: 2.15rem;
+  }
+
+  .filter-button {
+    padding-inline: 0.72rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-height: 560px) and (orientation: landscape) and (max-width: 1120px) {
+  .primary-nav {
+    top: calc(var(--header-height) + 0.35rem);
+    max-height: calc(100dvh - var(--header-height) - 0.7rem);
+    padding: 0.75rem;
+  }
+
+  .nav-link {
+    min-height: 2.55rem;
+  }
+}
+
+@media (hover: none) {
+  .button:hover,
+  .service-card:hover,
+  .project-card:hover,
+  .certification-card:hover,
+  .hero-social-link:hover,
+  .footer-social-link:hover,
+  .contact-social-link:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+/* Final fix: keep automation platform labels compact instead of full width. */
+.project-card-body .project-category,
+.certification-card-body .project-category {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+  .project-card-body .project-category,
+  .certification-card-body .project-category {
+    white-space: normal;
+  }
 }
