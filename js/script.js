@@ -9,7 +9,7 @@ const FALLBACK_IMAGE = "assets/images/shared/image-fallback.svg";
 // face needs a different crop in the Hero or About frame.
 // ============================================================
 const profilePhoto = {
-  src: "assets/images/profile/profile_2.PNG",
+  src: "assets/images/profile/profile-2.png",
   fallback: "assets/images/profile/profile-photo-placeholder.svg",
   alt: "Leanne Frances Ganado, AI Automation Engineer and CRM Developer",
   heroObjectPosition: "center center",
@@ -80,7 +80,7 @@ const toolLogos = [
   },
   {
     name: "GoHighLevel",
-    image: "assets/images/tools/high level.png",
+    image: "assets/images/tools/high-level.png",
     alt: "GoHighLevel CRM platform",
   },
   {
@@ -231,7 +231,7 @@ const automationProjects = [
     id: "gohighlevelCrmWorkflow",
     title: "Membership Access Automation",
     category: "GoHighLevel",
-    image: "assets/images/automation/Go High Level/03.1-paid.jpg",
+    image: "assets/images/automation/go-high-level/03-1-paid.jpg",
     description:
       "Built a GoHighLevel membership system that organizes onboarding, renewal reminders, status changes, and internal contact updates.",
     tags: [
@@ -250,7 +250,7 @@ const automationProjects = [
     id: "aiAgentAutomation",
     title: "Facebook Page AI Agent",
     category: "n8n",
-    image: "assets/images/automation/N8N/AI AGENT.JPG",
+    image: "assets/images/automation/n8n/ai-agent.jpg",
     description:
       "Built an AI agent that receives Facebook Page messages, retrieves relevant context, and prepares structured responses.",
     tags: [
@@ -269,7 +269,7 @@ const automationProjects = [
     id: "crmLeadNurturing",
     title: "Membership Renewal Email Reminders Automation",
     category: "GoHighLevel",
-    image: "assets/images/automation/Go High Level/4. Email Reminders.JPG",
+    image: "assets/images/automation/go-high-level/4-email-reminders.jpg",
     description:
       "Automated membership renewal reminders before and after renewal dates to create a more reliable follow-up process.",
     tags: [
@@ -289,7 +289,7 @@ const automationProjects = [
     title: "AI Job Application Assistant",
     category: "n8n",
     image:
-      "assets/images/automation/N8N/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+      "assets/images/automation/n8n/ai-jobs-scraper-resume-optimizer.jpg",
     description:
       "Built an AI workflow that finds matching job listings, tailors resume content, drafts applications, and records each result.",
     tags: [
@@ -311,7 +311,7 @@ const automationProjects = [
     title: "Lead Nurture",
     category: "GoHighLevel",
     image:
-      "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+      "assets/images/automation/go-high-level/8-prospect-nurture-workflow.jpg",
     description:
       "Automated prospect follow-up when leads enter a new pipeline stage, helping keep outreach consistent and organized.",
     tags: [
@@ -330,7 +330,7 @@ const automationProjects = [
     title: "Spam Call DND Automation",
     category: "GoHighLevel",
     image:
-      "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+      "assets/images/automation/go-high-level/auto-enable-inbound-dnd-calls-for-spam-labeled-contacts.jpg",
     description:
       "Automatically applied inbound call restrictions to contacts identified as spam, reducing manual CRM cleanup.",
     tags: [
@@ -347,7 +347,7 @@ const automationProjects = [
     id: "aiAssistantChatbot",
     title: "AI Assistant Chatbot",
     category: "GoHighLevel",
-    image: "assets/images/automation/Go High Level/Chatbot.JPG",
+    image: "assets/images/automation/go-high-level/chatbot.jpg",
     description:
       "Configured an AI assistant chatbot with defined conversation rules, knowledge guidance, and response boundaries.",
     tags: [
@@ -366,7 +366,7 @@ const automationProjects = [
     id: "voiceAppointmentScheduler",
     title: "Voice Appointment Scheduling System",
     category: "n8n",
-    image: "assets/images/automation/N8N/AI RECEPTIONIST.JPG",
+    image: "assets/images/automation/n8n/ai-receptionist.jpg",
     description:
       "Built a voice appointment scheduling system that checks availability, manages bookings, and records structured call details.",
     tags: [
@@ -387,7 +387,7 @@ const automationProjects = [
     id: "aiVideoContentRepurposing",
     title: "AI Video Content Repurposing",
     category: "Zapier",
-    image: "assets/images/automation/Zapier/AI Content Repurposing.JPG",
+    image: "assets/images/automation/zapier/ai-content-repurposing.jpg",
     description:
       "Built a content workflow that transcribes new videos, generates blog drafts, and routes approved social content.",
     tags: [
@@ -408,7 +408,7 @@ const automationProjects = [
     title: "AI Client Onboarding Workspace",
     category: "Zapier",
     image:
-      "assets/images/automation/Zapier/AI Intake Processing and Workspace Automation.JPG",
+      "assets/images/automation/zapier/ai-intake-processing-and-workspace-automation.jpg",
     description:
       "Processes intake data with Claude, creates Monday.com workspaces, assigns onboarding tasks, and sends internal completion updates.",
     tags: [
@@ -429,7 +429,7 @@ const automationProjects = [
     id: "asanaLeadEngagement",
     title: "Asana Lead Engagement",
     category: "Zapier",
-    image: "assets/images/automation/Zapier/Asana CRM Lead Engagement.JPG",
+    image: "assets/images/automation/zapier/asana-crm-lead-engagement.jpg",
     description:
       "Connects Asana lead stages with folder creation, follow-up emails, welcome messages, and service recommendations.",
     tags: [
@@ -450,7 +450,7 @@ const automationProjects = [
     id: "leadEnrichmentPriorityRouting",
     title: "Lead Enrichment and Priority Routing",
     category: "Zapier",
-    image: "assets/images/automation/Zapier/Automate Leads Enrichment.JPG",
+    image: "assets/images/automation/zapier/automate-leads-enrichment.jpg",
     description:
       "Enriches incoming leads, routes them by priority, records key details, and prepares personalized outreach.",
     tags: [
@@ -471,7 +471,7 @@ const automationProjects = [
     id: "metaAdsKpiReporting",
     title: "Meta Ads KPI Reporting",
     category: "Zapier",
-    image: "assets/images/automation/Zapier/Daily KPI Dashboard.JPG",
+    image: "assets/images/automation/zapier/daily-kpi-dashboard.jpg",
     description:
       "Collects Meta Ads data, calculates daily and monthly KPIs, and updates Google Sheets reporting dashboards.",
     tags: [
@@ -493,7 +493,7 @@ const automationProjects = [
     title: "Xero Transaction CSV Export",
     category: "Make.com",
     image:
-      "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+      "assets/images/automation/make/export-xero-transactions-and-upload-to-asana.jpg",
     description:
       "Exports Xero transactions, creates a CSV report, and attaches it to completed Asana tasks.",
     tags: [
@@ -526,7 +526,7 @@ const automationProjectDetails = {
     title: "Membership Access Automation",
     intro: "Automated onboarding, renewal reminders, and membership tracking.",
     coverImage:
-      "assets/images/automation/Go High Level/01-membership-access-automation.JPG",
+      "assets/images/automation/go-high-level/01-membership-access-automation.jpg",
     coverAlt: "Placeholder image for the project cover",
 
     // Keep these four sections in this order.
@@ -544,7 +544,7 @@ const automationProjectDetails = {
           "Updated contact fields, tags, and statuses.",
           "Connected related automation sequences.",
         ],
-        image: "assets/images/automation/Go High Level/02-new-member.JPG",
+        image: "assets/images/automation/go-high-level/02-new-member.jpg",
         imageAlt: "GoHighLevel membership access automation workflow",
       },
       {
@@ -560,7 +560,7 @@ const automationProjectDetails = {
           "Reduced repetitive manual tasks.",
           "Maintained consistent CRM records.",
         ],
-        image: "assets/images/automation/Go High Level/03.1-paid.jpg",
+        image: "assets/images/automation/go-high-level/03-1-paid.jpg",
         imageAlt: "Workflow conditions and automation branches",
       },
       {
@@ -576,7 +576,7 @@ const automationProjectDetails = {
           "Condition → select the correct workflow path.",
           "Action → update records or continue automation.",
         ],
-        image: "assets/images/automation/Go High Level/03.2-paid.jpg",
+        image: "assets/images/automation/go-high-level/03-2-paid.jpg",
         imageAlt: "Structured CRM automation workflow",
       },
       {
@@ -593,7 +593,7 @@ const automationProjectDetails = {
           "Checked fallback paths and notifications.",
         ],
         image:
-          "assets/images/automation/Go High Level/03-email-notifications.JPG",
+          "assets/images/automation/go-high-level/03-email-notifications.jpg",
         imageAlt: "Workflow testing and validation process",
       },
     ],
@@ -604,7 +604,7 @@ const automationProjectDetails = {
     intro:
       "An n8n automation that processes Facebook Page messages and generates contextual AI responses.",
 
-    coverImage: "assets/images/automation/N8N/AI AGENT.JPG",
+    coverImage: "assets/images/automation/n8n/ai-agent.jpg",
     coverAlt: "n8n Facebook Page AI agent workflow",
 
     sections: [
@@ -621,7 +621,7 @@ const automationProjectDetails = {
           "Generated contextual AI replies.",
           "Maintained conversation history.",
         ],
-        image: "assets/images/automation/N8N/AI AGENT.JPG",
+        image: "assets/images/automation/n8n/ai-agent.jpg",
         imageAlt: "Facebook Page AI messaging workflow",
       },
       {
@@ -637,7 +637,7 @@ const automationProjectDetails = {
           "Filtered incoming message data.",
           "Maintained response context.",
         ],
-        image: "assets/images/automation/N8N/AI AGENT.JPG",
+        image: "assets/images/automation/n8n/ai-agent.jpg",
         imageAlt: "Facebook webhook and message filtering",
       },
       {
@@ -653,7 +653,7 @@ const automationProjectDetails = {
           "AI agent → generate reply.",
           "Messenger API → send response.",
         ],
-        image: "assets/images/automation/N8N/AI AGENT.JPG",
+        image: "assets/images/automation/n8n/ai-agent.jpg",
         imageAlt: "Facebook Messenger AI agent workflow",
       },
       {
@@ -669,7 +669,7 @@ const automationProjectDetails = {
           "Checked AI response output.",
           "Verified Messenger API delivery.",
         ],
-        image: "assets/images/automation/N8N/AI AGENT.JPG",
+        image: "assets/images/automation/n8n/ai-agent.jpg",
         imageAlt: "Facebook AI agent testing",
       },
     ],
@@ -681,7 +681,7 @@ const automationProjectDetails = {
       "I built this workflow to validate job-search requests, collect listings, tailor resume content, and prepare application outputs.",
 
     coverImage:
-      "assets/images/automation/N8N/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+      "assets/images/automation/n8n/ai-jobs-scraper-resume-optimizer.jpg",
     coverAlt:
       "n8n workflow connecting Slack, job search processing, AI resume optimization, Google Docs, Gmail, and notifications",
 
@@ -699,7 +699,7 @@ const automationProjectDetails = {
           "Job listings are processed individually.",
           "Documents, drafts, and summaries are produced.",
         ],
-        image: "assets/images/automation/N8N/SLACK.JPG",
+        image: "assets/images/automation/n8n/slack.jpg",
         imageAlt:
           "Overview of the job search and resume optimization workflow in n8n",
       },
@@ -716,7 +716,7 @@ const automationProjectDetails = {
           "Multiple listings needed controlled iteration.",
           "Application outputs required consistent formatting.",
         ],
-        image: "assets/images/automation/N8N/resume template.JPG",
+        image: "assets/images/automation/n8n/resume-template.jpg",
         imageAlt:
           "Conditional routing and loop structure for job application processing",
       },
@@ -733,7 +733,7 @@ const automationProjectDetails = {
           "Job results → loop through listings and generate structured content.",
           "Updated document → create an email draft and send a Slack summary.",
         ],
-        image: "assets/images/automation/N8N/RESUME.JPG",
+        image: "assets/images/automation/n8n/resume.jpg",
         imageAlt:
           "Connected n8n nodes for AI resume generation, document updates, email drafts, and Slack reporting",
       },
@@ -751,7 +751,7 @@ const automationProjectDetails = {
           "Confirm document, email, and Slack actions complete.",
         ],
         image:
-          "assets/images/automation/N8N/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+          "assets/images/automation/n8n/ai-jobs-scraper-resume-optimizer.jpg",
         imageAlt:
           "Workflow validation gates for queries, job results, documents, and application outputs",
       },
@@ -763,7 +763,7 @@ const automationProjectDetails = {
     intro:
       "A  file-driven automation that turns new video uploads into AI-generated blog content and social posts.",
 
-    coverImage: "assets/images/automation/Zapier/AI Content Repurposing.JPG",
+    coverImage: "assets/images/automation/zapier/ai-content-repurposing.jpg",
     coverAlt:
       "Zapier workflow connecting Google Drive, AI content generation, conditional paths, Facebook Pages, and LinkedIn",
 
@@ -782,7 +782,7 @@ const automationProjectDetails = {
           "Two paths deliver social media outputs.",
         ],
         image:
-          "assets/images/automation/Zapier/AI Content Repurposing-Google Drive.JPG",
+          "assets/images/automation/zapier/ai-content-repurposing-google-drive.jpg",
         imageAlt:
           "Complete Zapier workflow for processing video files and publishing generated social content",
       },
@@ -800,7 +800,7 @@ const automationProjectDetails = {
           "Keep branch-specific publishing consistent.",
         ],
         image:
-          "assets/images/automation/Zapier/AI Content Repurposing-Google Drive Filter.JPG",
+          "assets/images/automation/zapier/ai-content-repurposing-google-drive-filter.jpg",
         imageAlt:
           "Google Drive trigger configuration for monitoring a selected video folder on a scheduled interval",
       },
@@ -817,7 +817,7 @@ const automationProjectDetails = {
           "Filter and AI → validate, transcribe, and generate blog content.",
           "Paths → publish approved copy to Facebook Pages and LinkedIn.",
         ],
-        image: "assets/images/automation/Zapier/AI Content Repurposing- AI.JPG",
+        image: "assets/images/automation/zapier/ai-content-repurposing-ai.jpg",
         imageAlt:
           "Zapier pipeline showing file filtering, AI transcription, blog generation, and conditional social publishing",
       },
@@ -834,7 +834,7 @@ const automationProjectDetails = {
           "Confirm each path receives usable generated text.",
           "Review final posts for completeness and formatting.",
         ],
-        image: "assets/images/automation/Zapier/fb post.JPG",
+        image: "assets/images/automation/zapier/fb-post.jpg",
         imageAlt:
           "Generated Facebook Page post used to review automated content structure and final formatting",
       },
@@ -847,7 +847,7 @@ const automationProjectDetails = {
       "A workflow that sends a timed email sequence to nurture prospects and maintain consistent follow-ups.",
 
     coverImage:
-      "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+      "assets/images/automation/go-high-level/8-prospect-nurture-workflow.jpg",
     coverAlt: "GoHighLevel prospect nurture email workflow",
 
     sections: [
@@ -865,7 +865,7 @@ const automationProjectDetails = {
           "Reduced repetitive follow-up tasks.",
         ],
         image:
-          "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+          "assets/images/automation/go-high-level/8-prospect-nurture-workflow.jpg",
         imageAlt: "Prospect nurture workflow overview",
       },
       {
@@ -882,7 +882,7 @@ const automationProjectDetails = {
           "Prevented missed communications.",
         ],
         image:
-          "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+          "assets/images/automation/go-high-level/8-prospect-nurture-workflow.jpg",
         imageAlt: "Prospect follow-up automation sequence",
       },
       {
@@ -899,7 +899,7 @@ const automationProjectDetails = {
           "Wait step → continue the sequence.",
         ],
         image:
-          "assets/images/automation/Go High Level/8.1 Prospect Nurture Workflow.JPG",
+          "assets/images/automation/go-high-level/8-1-prospect-nurture-workflow.jpg",
         imageAlt: "Timed prospect nurture email sequence",
       },
       {
@@ -916,7 +916,7 @@ const automationProjectDetails = {
           "Checked workflow completion.",
         ],
         image:
-          "assets/images/automation/Go High Level/8.1 Prospect Nurture Workflow.JPG",
+          "assets/images/automation/go-high-level/8-1-prospect-nurture-workflow.jpg",
         imageAlt: "Prospect nurture workflow testing",
       },
     ],
@@ -927,7 +927,7 @@ const automationProjectDetails = {
     intro:
       "A workflow that sends scheduled email reminders based on membership renewal dates.",
 
-    coverImage: "assets/images/automation/Go High Level/4. Email Reminders.JPG",
+    coverImage: "assets/images/automation/go-high-level/4-email-reminders.jpg",
     coverAlt: "GoHighLevel membership renewal email workflow",
 
     // Keep these four sections in this order.
@@ -945,7 +945,7 @@ const automationProjectDetails = {
           "Supported multiple membership types.",
           "Sent reminders at scheduled intervals.",
         ],
-        image: "assets/images/automation/Go High Level/4. Email Reminders.JPG",
+        image: "assets/images/automation/go-high-level/4-email-reminders.jpg",
         imageAlt: "Membership renewal reminder workflow overview",
       },
       {
@@ -961,7 +961,7 @@ const automationProjectDetails = {
           "Separated membership paths.",
           "Prevented incorrect workflow routing.",
         ],
-        image: "assets/images/automation/Go High Level/4.1 Email Reminders.JPG",
+        image: "assets/images/automation/go-high-level/4-1-email-reminders.jpg",
         imageAlt: "Date-based email reminder workflow",
       },
       {
@@ -977,7 +977,7 @@ const automationProjectDetails = {
           "Membership type → select email path.",
           "Wait step → send scheduled reminder.",
         ],
-        image: "assets/images/automation/Go High Level/4.1 Email Reminders.JPG",
+        image: "assets/images/automation/go-high-level/4-1-email-reminders.jpg",
         imageAlt: "Extended membership reminder email sequence",
       },
       {
@@ -993,7 +993,7 @@ const automationProjectDetails = {
           "Verified each email sequence.",
           "Checked conditions and fallback paths.",
         ],
-        image: "assets/images/automation/Go High Level/4.1 Email Reminders.JPG",
+        image: "assets/images/automation/go-high-level/4-1-email-reminders.jpg",
         imageAlt: "Membership email automation testing",
       },
     ],
@@ -1004,7 +1004,7 @@ const automationProjectDetails = {
     intro:
       "I built a voice-driven scheduling workflow that processes appointment requests, manages calendar events, and stores structured call outcomes.",
 
-    coverImage: "assets/images/automation/N8N/AI RECEPTIONIST.JPG",
+    coverImage: "assets/images/automation/n8n/ai-receptionist.jpg",
     coverAlt:
       "n8n workflow with separate branches for appointment availability, booking, rescheduling, cancellation, and call results",
 
@@ -1023,7 +1023,7 @@ const automationProjectDetails = {
           "Four appointment management operations.",
           "Calendar and record-storage outputs.",
         ],
-        image: "assets/images/automation/N8N/vapi-1.JPG",
+        image: "assets/images/automation/n8n/vapi-1.jpg",
         imageAlt:
           "Voice assistant configuration for handling appointment scheduling conversations and connected tool requests",
       },
@@ -1040,7 +1040,7 @@ const automationProjectDetails = {
           "Different fields for each action.",
           "Consistent dates and booking states.",
         ],
-        image: "assets/images/automation/N8N/vapi-2.JPG",
+        image: "assets/images/automation/n8n/vapi-2.jpg",
         imageAlt:
           "Vapi settings for calendar tools and structured appointment parameters",
       },
@@ -1057,7 +1057,7 @@ const automationProjectDetails = {
           "Request condition → route to the matching calendar action.",
           "Calendar result → respond and store structured records.",
         ],
-        image: "assets/images/automation/N8N/airtable-1.JPG",
+        image: "assets/images/automation/n8n/airtable-1.jpg",
         imageAlt: "Airtable Call Recording",
       },
       {
@@ -1073,7 +1073,7 @@ const automationProjectDetails = {
           "Check unavailable-slot fallback responses.",
           "Confirm booking status and linked records.",
         ],
-        image: "assets/images/automation/N8N/airtable-2.JPG",
+        image: "assets/images/automation/n8n/airtable-2.jpg",
         imageAlt:
           "Appointment records showing confirmed, cancelled, and rescheduled status outputs for workflow validation",
       },
@@ -1086,7 +1086,7 @@ const automationProjectDetails = {
       "I built a workflow that processes form data, creates AI content, sets up Monday.com resources, and sends an internal update.",
 
     coverImage:
-      "assets/images/automation/Zapier/AI Intake Processing and Workspace Automation.JPG",
+      "assets/images/automation/zapier/ai-intake-processing-and-workspace-automation.jpg",
     coverAlt:
       "Zapier workflow for form intake, AI content, Monday.com setup, and email notifications",
     // Keep these four sections in this order.
@@ -1105,7 +1105,7 @@ const automationProjectDetails = {
           "Monday.com and email actions finish the setup.",
         ],
         image:
-          "assets/images/automation/Zapier/AI Intake Processing and Workspace Automation Trigger.JPG",
+          "assets/images/automation/zapier/ai-intake-processing-and-workspace-automation-trigger.jpg",
         imageAlt:
           "Zapier workflow showing form intake, AI processing, workspace setup, and email delivery",
       },
@@ -1123,7 +1123,7 @@ const automationProjectDetails = {
           "Board IDs and folder IDs needed careful mapping.",
         ],
         image:
-          "assets/images/automation/Zapier/AI Intake Processing and Workspace Automation Conditional Paths.JPG",
+          "assets/images/automation/zapier/ai-intake-processing-and-workspace-automation-conditional-paths.jpg",
         imageAlt:
           "Zapier workflow with connected steps, generated IDs, and formatted AI content",
       },
@@ -1141,7 +1141,7 @@ const automationProjectDetails = {
           "Headline path → format content, create an item, and add an update.",
         ],
         image:
-          "assets/images/automation/Zapier/AI Intake Processing and Workspace Automation Subfolder.JPG",
+          "assets/images/automation/zapier/ai-intake-processing-and-workspace-automation-subfolder.jpg",
         imageAlt:
           "Zapier workflow with separate workspace creation and headline processing paths",
       },
@@ -1159,7 +1159,7 @@ const automationProjectDetails = {
           "Review the final document, board item, and email.",
         ],
         image:
-          "assets/images/automation/Zapier/AI Intake Processing and Workspace Automation Internal Notif.JPG",
+          "assets/images/automation/zapier/ai-intake-processing-and-workspace-automation-internal-notif.jpg",
         imageAlt:
           "Zapier workflow checks for form data, Monday.com IDs, document output, and email delivery",
       },
@@ -1171,7 +1171,7 @@ const automationProjectDetails = {
     intro:
       "I built a lead management workflow that responds to Asana stage changes with folders, tasks, follow-ups, and personalized emails.",
 
-    coverImage: "assets/images/automation/Zapier/Asana CRM Lead Engagement.JPG",
+    coverImage: "assets/images/automation/zapier/asana-crm-lead-engagement.jpg",
     coverAlt:
       "Zapier workflow connecting Asana lead stages with Google Drive, Gmail, delays, filters, and AI email writing",
 
@@ -1189,7 +1189,7 @@ const automationProjectDetails = {
           "Five paths cover different lead stages.",
           "Google Drive, Gmail, and AI complete the actions.",
         ],
-        image: "assets/images/automation/Zapier/Asana CRM Lead Engagement.JPG",
+        image: "assets/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier overview showing five automation paths based on Asana lead stages",
       },
@@ -1206,7 +1206,7 @@ const automationProjectDetails = {
           "Follow-ups needed controlled timing.",
           "Emails needed the correct lead information.",
         ],
-        image: "assets/images/automation/Zapier/Asana CRM Lead Engagement.JPG",
+        image: "assets/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier workflow showing separate lead stages, delayed follow-ups, and personalized communication",
       },
@@ -1223,7 +1223,7 @@ const automationProjectDetails = {
           "No Response or Quoted → send follow-ups, wait, and check for replies.",
           "Approved or Closed → prepare personalized welcome or recommendation emails.",
         ],
-        image: "assets/images/automation/Zapier/Asana CRM Lead Engagement.JPG",
+        image: "assets/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier solution connecting Asana stages to folders, follow-ups, welcome emails, and recommendations",
       },
@@ -1240,7 +1240,7 @@ const automationProjectDetails = {
           "Check reply filters before sending another follow-up.",
           "Review folders, files, tasks, and outgoing emails.",
         ],
-        image: "assets/images/automation/Zapier/Asana CRM Lead Engagement.JPG",
+        image: "assets/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier validation steps covering path conditions, email filters, files, tasks, and final messages",
       },
@@ -1253,7 +1253,7 @@ const automationProjectDetails = {
       "A GoHighLevel workflow that automatically enables inbound call restrictions for contacts marked as spam.",
 
     coverImage:
-      "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+      "assets/images/automation/go-high-level/auto-enable-inbound-dnd-calls-for-spam-labeled-contacts.jpg",
     coverAlt: "GoHighLevel spam call DND automation workflow",
 
     sections: [
@@ -1271,7 +1271,7 @@ const automationProjectDetails = {
           "Updated communication settings.",
         ],
         image:
-          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+          "assets/images/automation/go-high-level/auto-enable-inbound-dnd-calls-for-spam-labeled-contacts.jpg",
         imageAlt: "Spam call control automation overview",
       },
       {
@@ -1288,7 +1288,7 @@ const automationProjectDetails = {
           "Prevented repeated call activity.",
         ],
         image:
-          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+          "assets/images/automation/go-high-level/auto-enable-inbound-dnd-calls-for-spam-labeled-contacts.jpg",
         imageAlt: "Spam contact identification workflow",
       },
       {
@@ -1305,7 +1305,7 @@ const automationProjectDetails = {
           "Contact matched → enable call DND.",
         ],
         image:
-          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+          "assets/images/automation/go-high-level/auto-enable-inbound-dnd-calls-for-spam-labeled-contacts.jpg",
         imageAlt: "Call-triggered DND workflow",
       },
       {
@@ -1322,7 +1322,7 @@ const automationProjectDetails = {
           "Confirmed the DND update.",
         ],
         image:
-          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+          "assets/images/automation/go-high-level/auto-enable-inbound-dnd-calls-for-spam-labeled-contacts.jpg",
         imageAlt: "Call DND workflow testing",
       },
     ],
@@ -1333,7 +1333,7 @@ const automationProjectDetails = {
     intro:
       "An AI chatbot configured to provide helpful, consistent, and professional responses to customer questions.",
 
-    coverImage: "assets/images/automation/Go High Level/Chatbot.JPG",
+    coverImage: "assets/images/automation/go-high-level/chatbot.jpg",
     coverAlt: "AI assistant chatbot configuration dashboard",
 
     sections: [
@@ -1350,7 +1350,7 @@ const automationProjectDetails = {
           "Defined its primary support goal.",
           "Added conversation guidelines.",
         ],
-        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        image: "assets/images/automation/go-high-level/chatbot.jpg",
         imageAlt: "AI customer support chatbot setup",
       },
       {
@@ -1366,7 +1366,7 @@ const automationProjectDetails = {
           "Kept responses clear and concise.",
           "Defined appropriate bot behavior.",
         ],
-        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        image: "assets/images/automation/go-high-level/chatbot.jpg",
         imageAlt: "AI chatbot response settings",
       },
       {
@@ -1382,7 +1382,7 @@ const automationProjectDetails = {
           "Goal → define the chatbot’s purpose.",
           "Guidelines → control response behavior.",
         ],
-        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        image: "assets/images/automation/go-high-level/chatbot.jpg",
         imageAlt: "Structured AI chatbot prompt",
       },
       {
@@ -1398,7 +1398,7 @@ const automationProjectDetails = {
           "Reviewed response accuracy.",
           "Refined conversation instructions.",
         ],
-        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        image: "assets/images/automation/go-high-level/chatbot.jpg",
         imageAlt: "AI chatbot conversation testing",
       },
     ],
@@ -1409,7 +1409,7 @@ const automationProjectDetails = {
     intro:
       "I built a workflow that enriches incoming leads, checks their priority, and sends the correct sales notification.",
 
-    coverImage: "assets/images/automation/Zapier/Automate Leads Enrichment.JPG",
+    coverImage: "assets/images/automation/zapier/automate-leads-enrichment.jpg",
     coverAlt:
       "Zapier workflow for lead enrichment, priority routing, data storage, sales alerts, and AI email drafting",
 
@@ -1427,7 +1427,7 @@ const automationProjectDetails = {
           "Apollo adds company information.",
           "Priority rules select the final actions.",
         ],
-        image: "assets/images/automation/Zapier/Automate Leads Enrichment.JPG",
+        image: "assets/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier lead processing workflow with webhook intake, company enrichment, and two priority paths",
       },
@@ -1444,7 +1444,7 @@ const automationProjectDetails = {
           "Priority decisions needed clear conditions.",
           "Sales messages needed the correct lead information.",
         ],
-        image: "assets/images/automation/Zapier/Automate Leads Enrichment.JPG",
+        image: "assets/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier workflow showing lead enrichment requirements and separate high-priority and low-priority routes",
       },
@@ -1461,7 +1461,7 @@ const automationProjectDetails = {
           "Apollo enrichment → add company details and check priority.",
           "Priority path → store the lead and send the correct notification.",
         ],
-        image: "assets/images/automation/Zapier/Automate Leads Enrichment.JPG",
+        image: "assets/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier solution connecting webhook intake, Apollo enrichment, Google Sheets, Slack, AI, and Gmail",
       },
@@ -1478,7 +1478,7 @@ const automationProjectDetails = {
           "Confirm enrichment returns usable company data.",
           "Review routing, storage, alerts, and email content.",
         ],
-        image: "assets/images/automation/Zapier/Automate Leads Enrichment.JPG",
+        image: "assets/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier workflow validation checks for lead fields, enrichment results, routing, storage, and notifications",
       },
@@ -1490,7 +1490,7 @@ const automationProjectDetails = {
     intro:
       "I built a scheduled reporting workflow that collects Meta Ads data, calculates KPIs, and updates a Google Sheets dashboard.",
 
-    coverImage: "assets/images/automation/Zapier/Daily KPI Dashboard.JPG",
+    coverImage: "assets/images/automation/zapier/daily-kpi-dashboard.jpg",
     coverAlt:
       "Zapier workflow for collecting Meta Ads data and updating daily and monthly KPI reports",
 
@@ -1508,7 +1508,7 @@ const automationProjectDetails = {
           "JavaScript cleans and calculates the data.",
           "Google Sheets stores the final KPI results.",
         ],
-        image: "assets/images/automation/Zapier/Daily KPI Dashboard -1.JPG",
+        image: "assets/images/automation/zapier/daily-kpi-dashboard-1.jpg",
         imageAlt:
           "Zapier reporting workflow with scheduled data collection, calculations, and Google Sheets updates",
       },
@@ -1525,7 +1525,7 @@ const automationProjectDetails = {
           "Conversion actions needed careful filtering.",
           "Daily and monthly reports needed consistent data.",
         ],
-        image: "assets/images/automation/Zapier/Daily KPI Dashboard -2.JPG",
+        image: "assets/images/automation/zapier/daily-kpi-dashboard-2.jpg",
         imageAlt:
           "Zapier workflow showing data collection, record matching, KPI calculations, and reporting steps",
       },
@@ -1542,7 +1542,7 @@ const automationProjectDetails = {
           "JavaScript → clean records and calculate daily and monthly KPIs.",
           "Google Sheets → save results and update the reporting dashboard.",
         ],
-        image: "assets/images/automation/Zapier/Daily KPI Dashboard -3.JPG",
+        image: "assets/images/automation/zapier/daily-kpi-dashboard-3.jpg",
         imageAlt:
           "Zapier solution connecting Meta Ads API data, JavaScript calculations, and Google Sheets reporting",
       },
@@ -1559,7 +1559,7 @@ const automationProjectDetails = {
           "Confirm there are no duplicate unique keys.",
           "Review spend, conversions, and calculated cost metrics.",
         ],
-        image: "assets/images/automation/Zapier/Daily KPI Dashboard -4.JPG",
+        image: "assets/images/automation/zapier/daily-kpi-dashboard-4.jpg",
         imageAlt:
           "Zapier validation steps for API responses, duplicate records, KPI totals, and dashboard updates",
       },
@@ -1572,7 +1572,7 @@ const automationProjectDetails = {
       "I built a workflow that exports accounting transactions, formats them as a CSV report, and attaches the file to Asana.",
 
     coverImage:
-      "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+      "assets/images/automation/make/export-xero-transactions-and-upload-to-asana.jpg",
     coverAlt:
       "Make.com workflow connecting Asana, Xero, Google Sheets, data tools, and file attachment actions",
 
@@ -1591,7 +1591,7 @@ const automationProjectDetails = {
           "Asana receives the finished CSV file.",
         ],
         image:
-          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+          "assets/images/automation/make/export-xero-transactions-and-upload-to-asana.jpg",
         imageAlt:
           "Make.com scenario for exporting Xero transactions and uploading a CSV file to Asana",
       },
@@ -1609,7 +1609,7 @@ const automationProjectDetails = {
           "The final file needed the correct Asana task.",
         ],
         image:
-          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+          "assets/images/automation/make/export-xero-transactions-and-upload-to-asana.jpg",
         imageAlt:
           "Project requirements for exporting Xero transaction data and attaching the report to Asana",
       },
@@ -1627,7 +1627,7 @@ const automationProjectDetails = {
           "Text aggregator → build and upload the CSV attachment.",
         ],
         image:
-          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+          "assets/images/automation/make/export-xero-transactions-and-upload-to-asana.jpg",
         imageAlt:
           "Make.com workflow showing Xero data retrieval, routing, iteration, aggregation, and Asana upload",
       },
@@ -1645,7 +1645,7 @@ const automationProjectDetails = {
           "Open the CSV and verify the attachment.",
         ],
         image:
-          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+          "assets/images/automation/make/export-xero-transactions-and-upload-to-asana.jpg",
         imageAlt:
           "Make.com workflow checks for transaction rows, CSV formatting, temporary data cleanup, and Asana attachment",
       },
@@ -1655,7 +1655,7 @@ const automationProjectDetails = {
 const webProjects = [
   {
     title: "Calculator",
-    image: "assets/images/web/Calculator.JPG",
+    image: "assets/images/web/calculator.jpg",
     description:
       "A browser-based calculator built with HTML, CSS, and JavaScript for clear everyday calculations.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1664,7 +1664,7 @@ const webProjects = [
   },
   {
     title: "Rock, Paper and Scissors",
-    image: "assets/images/web/Rock, Paper and Scissor.JPG",
+    image: "assets/images/web/rock-paper-and-scissor.jpg",
     description:
       "An interactive browser game implementing the classic rock, paper, and scissors rules with JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1673,7 +1673,7 @@ const webProjects = [
   },
   {
     title: "Etch A Sketch",
-    image: "assets/images/web/Etch A Sketch.jpg",
+    image: "assets/images/web/etch-a-sketch.jpg",
     description:
       "An interactive drawing grid demonstrating dynamic DOM updates and responsive front-end behavior.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1682,7 +1682,7 @@ const webProjects = [
   },
   {
     title: "To-Do List",
-    image: "assets/images/web/To Do List.jpg",
+    image: "assets/images/web/to-do-list.jpg",
     description:
       "A browser-based task organizer for creating, tracking, and managing to-do items.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1691,7 +1691,7 @@ const webProjects = [
   },
   {
     title: "Tic-Tac-Toe",
-    image: "assets/images/web/Tic Tac Toe.JPG",
+    image: "assets/images/web/tic-tac-toe.jpg",
     description:
       "A browser implementation of the classic two-player tic-tac-toe game using HTML, CSS, and JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1700,7 +1700,7 @@ const webProjects = [
   },
   {
     title: "Restaurant Website",
-    image: "assets/images/web/Restaurant Page.jpg",
+    image: "assets/images/web/restaurant-page.jpg",
     description:
       "A responsive restaurant website demonstrating structured content, modern CSS, and JavaScript interactions.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1709,7 +1709,7 @@ const webProjects = [
   },
   {
     title: "Admin Dashboard",
-    image: "assets/images/web/Admin Dashboard.jpg",
+    image: "assets/images/web/admin-dashboard.jpg",
     description:
       "A responsive admin dashboard interface focused on organized information, reusable layout patterns, and clear visual hierarchy.",
     technologies: ["HTML", "CSS", "JavaScript"],
@@ -1728,7 +1728,7 @@ const certifications = [
     title: "WordPress Certificate",
     issuer: "Udemy",
     date: "June 21, 2026",
-    image: "assets/images/Certificates/Wordpress.jpg",
+    image: "assets/images/certificates/wordpress.jpg",
     credentialUrl:
       "https://www.udemy.com/certificate/UC-9d97e410-a933-44e5-9d9c-5f05bed4a2f4/",
   },
@@ -1736,7 +1736,7 @@ const certifications = [
     title: "GoHighLevel Certificate",
     issuer: "Tara AI Community+",
     date: "July 13, 2026",
-    image: "assets/images/Certificates/Leanne_Frances_Ganado_HighLevel.jpg",
+    image: "assets/images/certificates/leanne-frances-ganado-highlevel.jpg",
     credentialUrl:
       "https://my-certificates.com/certificates/6a53d29281683ab6396b999f",
   },
@@ -1745,7 +1745,7 @@ const certifications = [
     issuer: "Tara AI Community+",
     date: "July 6, 2026",
     image:
-      "assets/images/Certificates/Leanne_Frances_Ganado_Prompt_Engineering.jpg",
+      "assets/images/certificates/leanne-frances-ganado-prompt-engineering.jpg",
     credentialUrl:
       "https://my-certificates.com/certificates/6a4b11b181683ab6396558bf",
   },
@@ -1753,7 +1753,7 @@ const certifications = [
     title: "n8n Certificate",
     issuer: "Tara AI Community+",
     date: "June 28, 2026",
-    image: "assets/images/Certificates/Leanne_Frances_Ganado_n8n.jpg",
+    image: "assets/images/certificates/leanne-frances-ganado-n8n.jpg",
     credentialUrl:
       "https://my-certificates.com/certificates/6a4138108ca737db37390d0a",
   },
@@ -1761,7 +1761,7 @@ const certifications = [
     title: "Make.com Certificate",
     issuer: "Tara AI Community+",
     date: "January 8, 2026",
-    image: "assets/images/Certificates/Leanne_Frances_Ganado_Make.com.jpg",
+    image: "assets/images/certificates/leanne-frances-ganado-make-com.jpg",
     credentialUrl:
       "https://my-certificates.com/certificates/695fb0b4d99ce93dffb50b9f",
   },
@@ -1769,7 +1769,7 @@ const certifications = [
     title: "Zapier Certificate",
     issuer: "Tara AI Community+",
     date: "January 2, 2026",
-    image: "assets/images/Certificates/Leanne_Frances_Ganado_Zapier.png",
+    image: "assets/images/certificates/leanne-frances-ganado-zapier.png",
     credentialUrl:
       "https://my-certificates.com/certificates/6957b866b625eda4c08daafd",
   },
