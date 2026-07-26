@@ -73,7 +73,7 @@ html {
 
 body {
   margin: 0;
-  min-width: 0;
+  min-width: 320px;
   overflow-x: hidden;
   background: var(--color-background);
   color: var(--color-text);
@@ -2752,7 +2752,6 @@ body.modal-open {
   }
 }
 
-
 /* Image-loading performance enhancements. */
 .project-image,
 .certificate-image,
@@ -2774,423 +2773,739 @@ body.modal-open {
 }
 
 /* ============================================================
-   RESPONSIVE HARDENING
-   Keeps the existing visual design while preventing overflow,
-   clipped text, narrow-grid issues, and embed problems on phones,
-   tablets, laptops, large monitors, and touch devices.
+   FINAL UI FIXES
+   - Keeps project and certificate buttons visible
+   - Compact left-aligned buttons on desktop
+   - Compact centered buttons on mobile
+   - Preserves colored logos in dark mode
+   - Places monochrome logos on a light surface
+   - Mobile-centered and mobile-friendly typography
    ============================================================ */
 
+/* Global overflow protection */
 html,
 body {
+  width: 100%;
   max-width: 100%;
+}
+
+body {
+  overflow-x: clip;
 }
 
 main,
 section,
-header,
-footer,
 .container,
 .layout-container,
 .header-inner,
 .hero-grid,
 .about-editorial-grid,
-.services-grid,
+.project-section-header,
 .projects-grid,
-.skills-grid,
 .certifications-grid,
 .contact-section > .layout-container {
   min-width: 0;
-}
-
-.container > *,
-.layout-container > *,
-.header-inner > *,
-.hero-grid > *,
-.about-editorial-grid > *,
-.services-grid > *,
-.projects-grid > *,
-.skills-grid > *,
-.certifications-grid > *,
-.contact-section > .layout-container > * {
-  min-width: 0;
+  max-width: 100%;
 }
 
 img,
+svg,
 video,
-canvas,
 iframe,
 embed,
 object {
   max-width: 100%;
 }
 
-iframe {
-  border: 0;
+/* ============================================================
+   TOOL LOGOS
+   Keep original brand colors. Do not invert every logo.
+   Monochrome logos receive a small white surface instead.
+   ============================================================ */
+
+.tool-logo-image {
+  filter: none !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-p,
-li,
-a,
-button,
-span {
-  overflow-wrap: anywhere;
+.tool-logo-image-wrap {
+  flex: 0 0 auto;
 }
 
-.button,
-.filter-button,
-.theme-toggle,
-.nav-toggle,
-.contact-social-link,
-.hero-social-link,
-.footer-social-link {
-  touch-action: manipulation;
+.tool-logo-image-wrap--light {
+  padding: 0.34rem;
+  border: 1px solid rgba(23, 23, 20, 0.14);
+  background: #ffffff;
 }
 
-.button {
-  max-width: 100%;
-  text-align: center;
+.tool-logo-image-wrap--light .tool-logo-image {
+  filter: none !important;
 }
 
-.availability-badge {
-  max-width: 100%;
-  line-height: 1.35;
-  white-space: normal;
+html[data-theme="dark"] .tool-logo-image {
+  filter: none !important;
 }
+
+html[data-theme="dark"] .tool-logo-image-wrap--light {
+  border-color: rgba(255, 255, 255, 0.22);
+  background: #ffffff;
+}
+
+/* ============================================================
+   PROJECT AND CERTIFICATE CARDS
+   Fixes buttons being clipped or pushed outside the card.
+   ============================================================ */
 
 .project-card,
 .certification-card {
   display: flex;
   min-width: 0;
-  height: 100%;
   flex-direction: column;
 }
 
 .project-card-body,
 .certification-card-body {
   display: flex;
-  min-width: 0;
-  flex: 1;
-  flex-direction: column;
-}
-
-.project-card-body .project-actions,
-.certification-card-body .button {
-  margin-top: auto;
-}
-
-.project-card-body > p,
-.certification-card-body > p {
-  max-width: 100%;
-}
-
-.tag-list span {
-  max-width: 100%;
-  white-space: normal;
-}
-
-.project-image-wrapper,
-.certificate-image-wrapper {
   width: 100%;
+  min-width: 0;
+  min-height: 0;
+  height: auto !important;
+  flex: 1 1 auto;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.project-card-body {
+  align-items: flex-start;
+}
+
+.certification-card-body {
+  align-items: flex-start;
+}
+
+.project-card-body .tag-list {
+  margin-bottom: 0;
+}
+
+.project-actions {
+  display: flex !important;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.65rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
+  overflow: visible;
+}
+
+.project-actions .button,
+.project-details-button,
+.certification-card .button {
+  display: inline-flex !important;
+  width: auto !important;
+  max-width: 100%;
+  min-width: 0;
   flex: 0 0 auto;
+  visibility: visible !important;
+  opacity: 1 !important;
+  padding: 0.65rem 0.95rem;
+  white-space: normal;
+  text-align: center;
 }
 
-.calendly-inline-widget,
-.calendly-inline-widget iframe {
-  width: 100% !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
+#automation-projects .project-actions,
+#web-projects .project-actions {
+  justify-content: flex-start;
 }
 
-.calendly-inline-widget {
-  overflow: hidden;
-  border-radius: var(--radius-lg);
+#automation-projects .project-actions .button,
+#web-projects .project-actions .button {
+  margin-inline: 0;
 }
 
-.primary-nav {
-  overscroll-behavior: contain;
+.certification-card .button {
+  margin-top: auto;
+  margin-inline: 0;
+  align-self: flex-start;
 }
 
-@media (max-width: 1120px) {
+/* ============================================================
+   RESPONSIVE LAYOUT
+   ============================================================ */
+
+@media (max-width: 1280px) {
+  :root {
+    --page-gutter: clamp(1.2rem, 3vw, 2.5rem);
+  }
+
+  .header-inner {
+    gap: 1rem;
+  }
+
   .primary-nav {
-    right: max(1rem, env(safe-area-inset-right));
-    left: max(1rem, env(safe-area-inset-left));
-    max-height: calc(100vh - var(--header-height) - 2rem);
-    max-height: calc(100dvh - var(--header-height) - 2rem);
+    gap: 0.6rem;
   }
 
-  .nav-list,
-  .nav-list li,
+  .nav-list {
+    gap: 0.03rem;
+  }
+
   .nav-link {
-    width: 100%;
+    padding-inline: 0.58rem;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+
+  .nav-cta {
+    padding-inline: 1rem;
+    white-space: nowrap;
   }
 }
 
-@media (max-width: 900px) {
-  .hero .title-line {
-    white-space: normal;
+@media (max-width: 1024px) {
+  .hero {
+    min-height: auto;
   }
 
   .hero-grid {
-    gap: clamp(2.5rem, 7vw, 4rem);
-  }
-
-  .hero-visual {
-    min-height: clamp(24rem, 88vw, 34rem);
-  }
-
-  .project-section-header {
-    width: 100%;
-  }
-
-  .project-section-header > div:first-child,
-  #automation-projects .project-section-header > div:first-child {
-    width: 100%;
-  }
-
-  .experience-card {
-    gap: 2rem;
-  }
-
-  .calendly-inline-widget {
-    min-height: 680px;
-  }
-}
-
-@media (max-width: 700px) {
-  .contact-title-line {
-    white-space: normal;
-  }
-
-  .about-sidebar .check-list {
     grid-template-columns: 1fr;
   }
 
-  .about-sidebar .check-list li + li {
-    margin-top: 0;
+  .hero-content {
+    width: 100%;
+    max-width: 52rem;
   }
 
-  .project-modal-toolbar > span {
-    max-width: calc(100% - 4rem);
+  .hero-visual {
+    width: min(100%, 34rem);
+    min-height: 32rem;
+    margin-inline: auto;
+  }
+
+  .services-grid,
+  .projects-grid,
+  .certifications-grid,
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-editorial-grid,
+  .contact-section > .layout-container {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 640px) {
+/* ============================================================
+   MOBILE UI
+   ============================================================ */
+
+@media (max-width: 767px) {
+  :root {
+    --page-gutter: clamp(1rem, 4.5vw, 1.3rem);
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding-block: clamp(3.4rem, 11vw, 4.4rem);
+  }
+
+  /* Hide profile images on mobile */
+  .hero-visual,
+  .about-portrait-composition {
+    display: none !important;
+  }
+
+  .hero-grid {
+    display: block;
+  }
+
+  /* Center main mobile content */
+  .hero-content,
   .section-heading,
   .project-section-header,
-  .section-heading-centered {
-    margin-bottom: 2.25rem;
+  .project-section-header > div,
+  .about-editorial-left,
+  .about-editorial-right,
+  .about-story-content,
+  .service-card,
+  .project-card-body,
+  .certification-card-body,
+  .experience-summary,
+  .experience-details,
+  .skill-card,
+  .contact-content,
+  .booking-card,
+  .footer-inner,
+  .footer-identity {
+    text-align: center;
   }
 
-  .availability-badge {
-    align-items: flex-start;
-    padding: 0.62rem 0.78rem;
-    font-size: 0.7rem;
+  .section-heading,
+  .project-section-header > div:first-child,
+  .about-editorial-left,
+  .about-editorial-right,
+  .contact-content {
+    margin-inline: auto;
   }
 
-  .availability-dot {
-    flex: 0 0 auto;
-    margin-top: 0.22rem;
+  .title-line,
+  .contact-title-line {
+    display: inline;
+    white-space: normal;
+  }
+
+  /* Smaller mobile headings */
+  h1,
+  .hero h1 {
+    font-size: clamp(2.05rem, 10.4vw, 2.9rem);
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+  }
+
+  h2,
+  .about-editorial h2,
+  .contact-section > .layout-container .contact-content h2 {
+    font-size: clamp(1.9rem, 9.6vw, 2.65rem);
+    line-height: 1.05;
+    letter-spacing: -0.043em;
+  }
+
+  h3 {
+    font-size: clamp(1.2rem, 5.7vw, 1.55rem);
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+  }
+
+  h4 {
+    font-size: clamp(1.05rem, 4.8vw, 1.28rem);
+    line-height: 1.22;
+  }
+
+  .hero {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-role {
+    min-height: 0;
+    margin-bottom: 1.2rem;
+    font-size: clamp(1rem, 4.7vw, 1.18rem);
+    line-height: 1.35;
   }
 
   .hero-description,
   .about-editorial-bio,
-  .contact-section > .layout-container .contact-content > p:not(.section-label) {
-    font-size: 1rem;
+  .section-heading > p:not(.section-label),
+  .project-section-header p,
+  .service-card p,
+  .project-card p,
+  .skill-card,
+  .contact-content > p {
+    font-size: 0.94rem;
+    line-height: 1.62;
   }
 
-  .hero-visual {
-    width: min(100%, 31rem);
-    min-height: clamp(22rem, 116vw, 30rem);
+  .eyebrow {
+    font-size: 0.68rem;
+    line-height: 1.5;
+    letter-spacing: 0.065em;
   }
 
-  .portrait-frame {
-    inset: 2% 6% 2% 2%;
+  .availability-badge,
+  .section-label,
+  .experience-duration,
+  .project-category {
+    margin-inline: auto;
   }
 
-  .portrait-backdrop {
-    inset: 7% 1% 5% 7%;
+  .availability-badge {
+    width: fit-content;
+    max-width: 100%;
+    justify-content: center;
+    padding: 0.56rem 0.72rem;
+    font-size: 0.66rem;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-align: center;
+    white-space: normal;
   }
 
-  .filter-group {
-    gap: 0.5rem;
+  .hero-social-links,
+  .hero-actions,
+  .contact-actions,
+  .contact-social-links,
+  .footer-social-links,
+  .filter-group,
+  .tag-list {
+    justify-content: center;
   }
 
-  .filter-button {
-    min-height: 2.75rem;
+  .hero-highlights {
+    grid-template-columns: 1fr;
+    gap: 1.1rem;
+    text-align: center;
+  }
+
+  .hero-highlights li,
+  .hero-highlights li + li {
+    padding: 0;
+    border: 0;
+  }
+
+  .service-icon {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .services-grid,
+  .projects-grid,
+  .certifications-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-card-body,
-  .certification-card-body,
-  .service-card,
-  .skill-card {
-    padding: 1.2rem;
+  .certification-card-body {
+    align-items: center;
   }
 
-  .project-actions {
-    width: 100%;
+  /* Mobile buttons are centered but remain compact */
+  #automation-projects .project-actions,
+  #web-projects .project-actions {
+    justify-content: center;
   }
 
   .project-actions .button,
-  .certification-card .button,
-  .contact-actions .button {
+  .project-details-button,
+  .certification-card .button {
+    width: auto !important;
+    max-width: min(100%, 12.5rem);
+    margin-inline: auto;
+    align-self: center;
+    padding-inline: 0.95rem;
+  }
+
+  .certification-meta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .experience-list {
+    columns: 1;
     width: 100%;
   }
 
-  .contact-social-links {
-    width: 100%;
+  .experience-list li,
+  .check-list li {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .experience-list li::before,
+  .check-list li::before {
+    display: none;
+  }
+
+  .about-editorial-right {
+    display: block;
+  }
+
+  .about-story-rail {
+    display: none;
+  }
+
+  .contact-social-link {
+    justify-content: center;
+  }
+
+  .calendly-inline-widget,
+  .calendly-inline-widget iframe {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 
   .calendly-inline-widget {
-    height: 680px !important;
-    min-height: 680px;
+    height: 660px !important;
   }
 
-  .project-modal-hero,
-  .project-detail-sections,
-  .project-modal-metrics-section,
-  .project-modal-gallery-section {
-    padding-right: max(1rem, env(safe-area-inset-right));
-    padding-left: max(1rem, env(safe-area-inset-left));
+  .footer-inner {
+    justify-items: center;
+  }
+
+  /* Mobile project modal */
+  .project-modal-hero-copy,
+  .project-detail-copy,
+  .project-modal-section-heading {
+    text-align: center;
+  }
+
+  .project-detail-number,
+  .project-detail-label,
+  .project-modal-tools-label {
+    margin-inline: auto;
+  }
+
+  .project-detail-list {
+    justify-items: center;
+  }
+
+  .project-detail-list li {
+    width: fit-content;
+    max-width: 100%;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .project-detail-list li::before {
+    display: none;
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 480px) {
   :root {
-    --page-gutter: 1rem;
+    --header-height: 68px;
+    --page-gutter: 0.95rem;
+  }
+
+  .section {
+    padding-block: 3.2rem;
   }
 
   .header-inner {
     gap: 0.45rem;
   }
 
-  .brand-mark,
+  .brand-mark {
+    width: 2.3rem;
+  }
+
   .theme-toggle,
   .nav-toggle {
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 2.6rem;
+    height: 2.6rem;
   }
 
-  .hero {
-    padding-top: 2.75rem;
+  .primary-nav {
+    top: calc(var(--header-height) + 0.45rem);
+    right: 0.7rem;
+    left: 0.7rem;
+    max-height: calc(100dvh - var(--header-height) - 1rem);
   }
 
+  h1,
   .hero h1 {
-    font-size: clamp(2.25rem, 11.5vw, 3.1rem);
+    font-size: clamp(1.95rem, 10vw, 2.6rem);
+  }
+
+  h2,
+  .about-editorial h2,
+  .contact-section > .layout-container .contact-content h2 {
+    font-size: clamp(1.78rem, 9vw, 2.35rem);
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 
   .hero-role {
-    min-height: 3.2rem;
-    font-size: 1.08rem;
+    font-size: 0.98rem;
   }
 
-  .hero-social-links {
-    gap: 0.65rem;
+  .hero-description,
+  .about-editorial-bio,
+  .section-heading > p:not(.section-label),
+  .project-section-header p,
+  .service-card p,
+  .project-card p,
+  .skill-card,
+  .contact-content > p {
+    font-size: 0.9rem;
   }
 
-  .hero-social-link {
-    width: 2.9rem;
-    height: 2.9rem;
-  }
-
-  .contact-social-links {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .contact-social-link {
+  .availability-badge {
     width: 100%;
-    justify-content: center;
   }
 
-  .tag-list {
-    gap: 0.38rem;
-  }
-
-  .tag-list span {
-    min-height: 1.9rem;
-    padding: 0.34rem 0.58rem;
-    font-size: 0.72rem;
-  }
-
-  .project-card-body h4,
-  .certification-card-body h3 {
-    line-height: 1.15;
-  }
-
-  .footer-social-link {
-    width: 2.8rem;
-    height: 2.8rem;
-  }
-}
-
-@media (max-width: 360px) {
-  :root {
-    --page-gutter: 0.85rem;
-  }
-
-  .section {
-    padding-block: 3.6rem;
-  }
-
-  .hero h1 {
-    font-size: 2.15rem;
-  }
-
-  .contact-section > .layout-container .contact-content h2,
-  .about-editorial h2,
-  h2 {
-    font-size: 2.15rem;
+  .button {
+    min-height: 2.75rem;
+    padding: 0.68rem 0.9rem;
+    font-size: 0.8rem;
   }
 
   .filter-button {
-    padding-inline: 0.72rem;
-    font-size: 0.75rem;
+    min-height: 2.3rem;
+    padding: 0.48rem 0.7rem;
+    font-size: 0.73rem;
+  }
+
+  .hero-social-link {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .service-card,
+  .project-card-body,
+  .certification-card-body,
+  .skill-card,
+  .experience-card,
+  .booking-card {
+    padding: 1.1rem;
+  }
+
+  .tag-list {
+    gap: 0.36rem;
+  }
+
+  .tag-list span {
+    min-height: 1.82rem;
+    padding: 0.3rem 0.53rem;
+    font-size: 0.68rem;
+  }
+
+  .project-actions .button,
+  .project-details-button,
+  .certification-card .button {
+    max-width: min(100%, 11.5rem);
+  }
+
+  .tool-logo-card,
+  html[data-theme="dark"] .tool-logo-card {
+    gap: 0.62rem;
+    padding: 0.48rem 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  .tool-logo-image-wrap {
+    width: 2.15rem;
+  }
+
+  .contact-social-link {
+    width: min(100%, 15rem);
+  }
+
+  .calendly-inline-widget {
+    height: 620px !important;
   }
 }
 
-@media (max-height: 560px) and (orientation: landscape) and (max-width: 1120px) {
+/* ============================================================
+   MOBILE EXPERIENCE ALIGNMENT FIX
+   Keep the experience section easy to scan on small screens.
+   Headings and responsibilities are left-aligned instead of
+   centering every line.
+   ============================================================ */
+
+@media (max-width: 767px) {
+  .experience-card,
+  .experience-summary,
+  .experience-details {
+    text-align: left;
+  }
+
+  .experience-summary,
+  .experience-details {
+    width: 100%;
+  }
+
+  .experience-duration {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  .experience-summary h3,
+  .experience-summary p,
+  .experience-details h4 {
+    text-align: left;
+  }
+
+  .experience-list {
+    width: 100%;
+    columns: 1;
+  }
+
+  .experience-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    text-align: left;
+  }
+
+  .experience-list li::before {
+    position: absolute;
+    top: 0.68em;
+    left: 0;
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    border-radius: 50%;
+    background: currentColor;
+    content: "";
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card {
+    gap: 1.5rem;
+    padding: 1.15rem;
+  }
+
+  .experience-summary h3 {
+    font-size: 1.2rem;
+  }
+
+  .experience-details h4 {
+    font-size: 1.05rem;
+  }
+
+  .experience-list li {
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+}
+
+/* ============================================================
+   MOBILE HEADER CONTROLS
+   Keep the LG logo on the left and move the theme/menu buttons
+   to the far right.
+   ============================================================ */
+
+@media (max-width: 1120px) {
+  .header-inner {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    width: 100%;
+  }
+
+  .brand {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .header-controls {
+    grid-column: 3;
+    justify-self: end;
+    margin-left: auto;
+  }
+
   .primary-nav {
-    top: calc(var(--header-height) + 0.35rem);
-    max-height: calc(100dvh - var(--header-height) - 0.7rem);
-    padding: 0.75rem;
-  }
-
-  .nav-link {
-    min-height: 2.55rem;
+    grid-column: 1 / -1;
   }
 }
 
-@media (hover: none) {
-  .button:hover,
-  .service-card:hover,
-  .project-card:hover,
-  .certification-card:hover,
-  .hero-social-link:hover,
-  .footer-social-link:hover,
-  .contact-social-link:hover {
-    transform: none;
-    box-shadow: none;
+@media (max-width: 767px) {
+  .header-inner {
+    grid-template-columns: auto 1fr auto;
   }
-}
 
-/* Final fix: keep automation platform labels compact instead of full width. */
-.project-card-body .project-category,
-.certification-card-body .project-category {
-  display: inline-flex;
-  width: fit-content;
-  max-width: 100%;
-  flex: 0 0 auto;
-  align-self: flex-start;
-  white-space: nowrap;
-}
-
-@media (max-width: 380px) {
-  .project-card-body .project-category,
-  .certification-card-body .project-category {
-    white-space: normal;
+  .header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
   }
 }
