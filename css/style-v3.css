@@ -3176,3 +3176,21 @@ span {
     box-shadow: none;
   }
 }
+
+/* Final fix: keep automation platform labels compact instead of full width. */
+.project-card-body .project-category,
+.certification-card-body .project-category {
+  display: inline-flex;
+  width: fit-content;
+  max-width: 100%;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+@media (max-width: 380px) {
+  .project-card-body .project-category,
+  .certification-card-body .project-category {
+    white-space: normal;
+  }
+}
