@@ -269,7 +269,8 @@ const automationProjects = [
     id: "crmLeadNurturing",
     title: "Membership Renewal Email Reminders Automation",
     category: "GoHighLevel",
-    image: "site-assets-v2/images/automation/go-high-level/4-email-reminders.jpg",
+    image:
+      "site-assets-v2/images/automation/go-high-level/4-email-reminders.jpg",
     description:
       "Automated membership renewal reminders before and after renewal dates to create a more reliable follow-up process.",
     tags: [
@@ -429,7 +430,8 @@ const automationProjects = [
     id: "asanaLeadEngagement",
     title: "Asana Lead Engagement",
     category: "Zapier",
-    image: "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
+    image:
+      "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
     description:
       "Connects Asana lead stages with folder creation, follow-up emails, welcome messages, and service recommendations.",
     tags: [
@@ -450,7 +452,8 @@ const automationProjects = [
     id: "leadEnrichmentPriorityRouting",
     title: "Lead Enrichment and Priority Routing",
     category: "Zapier",
-    image: "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
+    image:
+      "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
     description:
       "Enriches incoming leads, routes them by priority, records key details, and prepares personalized outreach.",
     tags: [
@@ -544,7 +547,8 @@ const automationProjectDetails = {
           "Updated contact fields, tags, and statuses.",
           "Connected related automation sequences.",
         ],
-        image: "site-assets-v2/images/automation/go-high-level/02-new-member.jpg",
+        image:
+          "site-assets-v2/images/automation/go-high-level/02-new-member.jpg",
         imageAlt: "GoHighLevel membership access automation workflow",
       },
       {
@@ -763,7 +767,8 @@ const automationProjectDetails = {
     intro:
       "A  file-driven automation that turns new video uploads into AI-generated blog content and social posts.",
 
-    coverImage: "site-assets-v2/images/automation/zapier/ai-content-repurposing.jpg",
+    coverImage:
+      "site-assets-v2/images/automation/zapier/ai-content-repurposing.jpg",
     coverAlt:
       "Zapier workflow connecting Google Drive, AI content generation, conditional paths, Facebook Pages, and LinkedIn",
 
@@ -817,7 +822,8 @@ const automationProjectDetails = {
           "Filter and AI → validate, transcribe, and generate blog content.",
           "Paths → publish approved copy to Facebook Pages and LinkedIn.",
         ],
-        image: "site-assets-v2/images/automation/zapier/ai-content-repurposing-ai.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/ai-content-repurposing-ai.jpg",
         imageAlt:
           "Zapier pipeline showing file filtering, AI transcription, blog generation, and conditional social publishing",
       },
@@ -927,7 +933,8 @@ const automationProjectDetails = {
     intro:
       "A workflow that sends scheduled email reminders based on membership renewal dates.",
 
-    coverImage: "site-assets-v2/images/automation/go-high-level/4-email-reminders.jpg",
+    coverImage:
+      "site-assets-v2/images/automation/go-high-level/4-email-reminders.jpg",
     coverAlt: "GoHighLevel membership renewal email workflow",
 
     // Keep these four sections in this order.
@@ -945,7 +952,8 @@ const automationProjectDetails = {
           "Supported multiple membership types.",
           "Sent reminders at scheduled intervals.",
         ],
-        image: "site-assets-v2/images/automation/go-high-level/4-email-reminders.jpg",
+        image:
+          "site-assets-v2/images/automation/go-high-level/4-email-reminders.jpg",
         imageAlt: "Membership renewal reminder workflow overview",
       },
       {
@@ -961,7 +969,8 @@ const automationProjectDetails = {
           "Separated membership paths.",
           "Prevented incorrect workflow routing.",
         ],
-        image: "site-assets-v2/images/automation/go-high-level/4-1-email-reminders.jpg",
+        image:
+          "site-assets-v2/images/automation/go-high-level/4-1-email-reminders.jpg",
         imageAlt: "Date-based email reminder workflow",
       },
       {
@@ -977,7 +986,8 @@ const automationProjectDetails = {
           "Membership type → select email path.",
           "Wait step → send scheduled reminder.",
         ],
-        image: "site-assets-v2/images/automation/go-high-level/4-1-email-reminders.jpg",
+        image:
+          "site-assets-v2/images/automation/go-high-level/4-1-email-reminders.jpg",
         imageAlt: "Extended membership reminder email sequence",
       },
       {
@@ -993,7 +1003,8 @@ const automationProjectDetails = {
           "Verified each email sequence.",
           "Checked conditions and fallback paths.",
         ],
-        image: "site-assets-v2/images/automation/go-high-level/4-1-email-reminders.jpg",
+        image:
+          "site-assets-v2/images/automation/go-high-level/4-1-email-reminders.jpg",
         imageAlt: "Membership email automation testing",
       },
     ],
@@ -1171,7 +1182,8 @@ const automationProjectDetails = {
     intro:
       "I built a lead management workflow that responds to Asana stage changes with folders, tasks, follow-ups, and personalized emails.",
 
-    coverImage: "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
+    coverImage:
+      "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
     coverAlt:
       "Zapier workflow connecting Asana lead stages with Google Drive, Gmail, delays, filters, and AI email writing",
 
@@ -1189,7 +1201,8 @@ const automationProjectDetails = {
           "Five paths cover different lead stages.",
           "Google Drive, Gmail, and AI complete the actions.",
         ],
-        image: "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier overview showing five automation paths based on Asana lead stages",
       },
@@ -1206,7 +1219,8 @@ const automationProjectDetails = {
           "Follow-ups needed controlled timing.",
           "Emails needed the correct lead information.",
         ],
-        image: "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier workflow showing separate lead stages, delayed follow-ups, and personalized communication",
       },
@@ -1223,7 +1237,8 @@ const automationProjectDetails = {
           "No Response or Quoted → send follow-ups, wait, and check for replies.",
           "Approved or Closed → prepare personalized welcome or recommendation emails.",
         ],
-        image: "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier solution connecting Asana stages to folders, follow-ups, welcome emails, and recommendations",
       },
@@ -1240,7 +1255,8 @@ const automationProjectDetails = {
           "Check reply filters before sending another follow-up.",
           "Review folders, files, tasks, and outgoing emails.",
         ],
-        image: "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/asana-crm-lead-engagement.jpg",
         imageAlt:
           "Zapier validation steps covering path conditions, email filters, files, tasks, and final messages",
       },
@@ -1409,7 +1425,8 @@ const automationProjectDetails = {
     intro:
       "I built a workflow that enriches incoming leads, checks their priority, and sends the correct sales notification.",
 
-    coverImage: "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
+    coverImage:
+      "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
     coverAlt:
       "Zapier workflow for lead enrichment, priority routing, data storage, sales alerts, and AI email drafting",
 
@@ -1427,7 +1444,8 @@ const automationProjectDetails = {
           "Apollo adds company information.",
           "Priority rules select the final actions.",
         ],
-        image: "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier lead processing workflow with webhook intake, company enrichment, and two priority paths",
       },
@@ -1444,7 +1462,8 @@ const automationProjectDetails = {
           "Priority decisions needed clear conditions.",
           "Sales messages needed the correct lead information.",
         ],
-        image: "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier workflow showing lead enrichment requirements and separate high-priority and low-priority routes",
       },
@@ -1461,7 +1480,8 @@ const automationProjectDetails = {
           "Apollo enrichment → add company details and check priority.",
           "Priority path → store the lead and send the correct notification.",
         ],
-        image: "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier solution connecting webhook intake, Apollo enrichment, Google Sheets, Slack, AI, and Gmail",
       },
@@ -1478,7 +1498,8 @@ const automationProjectDetails = {
           "Confirm enrichment returns usable company data.",
           "Review routing, storage, alerts, and email content.",
         ],
-        image: "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/automate-leads-enrichment.jpg",
         imageAlt:
           "Zapier workflow validation checks for lead fields, enrichment results, routing, storage, and notifications",
       },
@@ -1490,7 +1511,8 @@ const automationProjectDetails = {
     intro:
       "I built a scheduled reporting workflow that collects Meta Ads data, calculates KPIs, and updates a Google Sheets dashboard.",
 
-    coverImage: "site-assets-v2/images/automation/zapier/daily-kpi-dashboard.jpg",
+    coverImage:
+      "site-assets-v2/images/automation/zapier/daily-kpi-dashboard.jpg",
     coverAlt:
       "Zapier workflow for collecting Meta Ads data and updating daily and monthly KPI reports",
 
@@ -1508,7 +1530,8 @@ const automationProjectDetails = {
           "JavaScript cleans and calculates the data.",
           "Google Sheets stores the final KPI results.",
         ],
-        image: "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-1.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-1.jpg",
         imageAlt:
           "Zapier reporting workflow with scheduled data collection, calculations, and Google Sheets updates",
       },
@@ -1525,7 +1548,8 @@ const automationProjectDetails = {
           "Conversion actions needed careful filtering.",
           "Daily and monthly reports needed consistent data.",
         ],
-        image: "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-2.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-2.jpg",
         imageAlt:
           "Zapier workflow showing data collection, record matching, KPI calculations, and reporting steps",
       },
@@ -1542,7 +1566,8 @@ const automationProjectDetails = {
           "JavaScript → clean records and calculate daily and monthly KPIs.",
           "Google Sheets → save results and update the reporting dashboard.",
         ],
-        image: "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-3.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-3.jpg",
         imageAlt:
           "Zapier solution connecting Meta Ads API data, JavaScript calculations, and Google Sheets reporting",
       },
@@ -1559,7 +1584,8 @@ const automationProjectDetails = {
           "Confirm there are no duplicate unique keys.",
           "Review spend, conversions, and calculated cost metrics.",
         ],
-        image: "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-4.jpg",
+        image:
+          "site-assets-v2/images/automation/zapier/daily-kpi-dashboard-4.jpg",
         imageAlt:
           "Zapier validation steps for API responses, duplicate records, KPI totals, and dashboard updates",
       },
@@ -1736,7 +1762,8 @@ const certifications = [
     title: "GoHighLevel Certificate",
     issuer: "Tara AI Community+",
     date: "July 13, 2026",
-    image: "site-assets-v2/images/certificates/leanne-frances-ganado-highlevel.jpg",
+    image:
+      "site-assets-v2/images/certificates/leanne-frances-ganado-highlevel.jpg",
     credentialUrl:
       "https://my-certificates.com/certificates/6a53d29281683ab6396b999f",
   },
@@ -1761,7 +1788,8 @@ const certifications = [
     title: "Make.com Certificate",
     issuer: "Tara AI Community+",
     date: "January 8, 2026",
-    image: "site-assets-v2/images/certificates/leanne-frances-ganado-make-com.jpg",
+    image:
+      "site-assets-v2/images/certificates/leanne-frances-ganado-make-com.jpg",
     credentialUrl:
       "https://my-certificates.com/certificates/695fb0b4d99ce93dffb50b9f",
   },
@@ -1769,7 +1797,8 @@ const certifications = [
     title: "Zapier Certificate",
     issuer: "Tara AI Community+",
     date: "January 2, 2026",
-    image: "site-assets-v2/images/certificates/leanne-frances-ganado-zapier.png",
+    image:
+      "site-assets-v2/images/certificates/leanne-frances-ganado-zapier.png",
     credentialUrl:
       "https://my-certificates.com/certificates/6957b866b625eda4c08daafd",
   },
