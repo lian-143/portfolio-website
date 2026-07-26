@@ -251,7 +251,7 @@ const automationProjects = [
     id: "aiAgentAutomation",
     title: "Facebook Page AI Agent",
     category: "n8n",
-    image: "assets/images/automation/N8N/AI AGENT.JPG",
+    image: "assets/images/automation/N8N/ai-agent.JPG",
     description:
       "Built an AI agent that receives Facebook Page messages, retrieves relevant context, and prepares structured responses.",
     tags: [
