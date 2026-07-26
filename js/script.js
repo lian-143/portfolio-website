@@ -250,7 +250,7 @@ const automationProjects = [
     id: "aiAgentAutomation",
     title: "Facebook Page AI Agent",
     category: "n8n",
-    image: "assets/images/automation/n8n/AI AGENT.JPG",
+    image: "assets/images/automation/n8n/ai-agent.jpg",
     description:
       "Built an AI agent that receives Facebook Page messages, retrieves relevant context, and prepares structured responses.",
     tags: [
@@ -288,8 +288,7 @@ const automationProjects = [
     id: "aiJobApplicationAssistant",
     title: "AI Job Application Assistant",
     category: "n8n",
-    image:
-      "assets/images/automation/n8n/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+    image: "assets/images/automation/n8n/ai-jobs-scraper-resume-optimizer.jpg",
     description:
       "Built an AI workflow that finds matching job listings, tailors resume content, drafts applications, and records each result.",
     tags: [
