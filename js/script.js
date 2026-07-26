@@ -603,7 +603,7 @@ const automationProjectDetails = {
     intro:
       "An n8n automation that processes Facebook Page messages and generates contextual AI responses.",
 
-    coverImage: "assets/images/automation/n8n/AI AGENT.JPG",
+    coverImage: "assets/images/automation/N8N/AI AGENT.JPG",
     coverAlt: "n8n Facebook Page AI agent workflow",
 
     sections: [
@@ -620,7 +620,7 @@ const automationProjectDetails = {
           "Generated contextual AI replies.",
           "Maintained conversation history.",
         ],
-        image: "assets/images/automation/n8n/AI AGENT.JPG",
+        image: "assets/images/automation/N8N/AI AGENT.JPG",
         imageAlt: "Facebook Page AI messaging workflow",
       },
       {
