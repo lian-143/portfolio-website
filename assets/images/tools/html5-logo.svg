@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">HTML5</title>
+  <desc id="desc">Local transparent SVG mark for HTML5.</desc>
+  <path fill="#E34F26" d="M8 5h48l-4.4 50L32 61 12.4 55Z"/><path fill="#EF652A" d="M32 9v47l15.8-4.4L51.6 9Z"/><path fill="#fff" d="M18 17h29l-.6 6H25l.5 6h20.4l-1.6 18L32 50.4 19.7 47l-.8-10h6l.4 5.3 6.7 1.8 6.7-1.8.7-7.3h-21Z"/>
+</svg>

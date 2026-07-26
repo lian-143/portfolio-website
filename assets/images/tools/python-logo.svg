@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Python</title>
+  <desc id="desc">Local transparent SVG mark for Python.</desc>
+  <path fill="#3776AB" d="M31 5c-13 0-12 6-12 6v8h13v3H14S5 21 5 34s8 13 8 13h7v-9s0-8 8-8h13s7 0 7-7V12s1-7-17-7Zm-7 7a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z"/><path fill="#FFD43B" d="M33 59c13 0 12-6 12-6v-8H32v-3h18s9 1 9-12-8-13-8-13h-7v9s0 8-8 8H23s-7 0-7 7v11s-1 7 17 7Zm7-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+</svg>

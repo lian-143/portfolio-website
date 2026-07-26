@@ -11,7 +11,7 @@ const FALLBACK_IMAGE = "assets/images/shared/image-fallback.svg";
 const profilePhoto = {
   src: "assets/images/profile/profile_2.PNG",
   fallback: "assets/images/profile/profile-photo-placeholder.svg",
-  alt: "Profile photo of Leanne Ganado",
+  alt: "Leanne Frances Ganado, AI Automation Engineer and CRM Developer",
   heroObjectPosition: "center center",
   aboutObjectPosition: "center center",
 };
@@ -23,144 +23,491 @@ const profilePhoto = {
 // Add, remove, or reorder tools without editing index.html.
 // ============================================================
 const toolLogos = [
-  { name: "Zapier", image: "assets/images/tools/zapier-placeholder.svg" },
-  { name: "n8n", image: "assets/images/tools/n8n-placeholder.svg" },
-  { name: "Make.com", image: "assets/images/tools/make-placeholder.svg" },
   {
-    name: "GoHighLevel",
-    image: "assets/images/tools/gohighlevel-placeholder.svg",
+    name: "AI Workflow Automation",
+    image: "assets/images/tools/ai-workflow-automation-icon.svg",
+    alt: "AI workflow automation",
   },
-  { name: "OpenAI", image: "assets/images/tools/openai-placeholder.svg" },
+  {
+    name: "AI Agents",
+    image: "assets/images/tools/ai-agents-icon.svg",
+    alt: "AI agent development",
+  },
+  {
+    name: "Prompt Engineering",
+    image: "assets/images/tools/prompt-engineering-icon.svg",
+    alt: "Prompt engineering",
+  },
+  {
+    name: "Process Mapping",
+    image: "assets/images/tools/process-mapping-icon.svg",
+    alt: "Business process mapping",
+  },
+  {
+    name: "OpenAI",
+    image: "assets/images/tools/openai-logo.svg",
+    alt: "OpenAI platform",
+  },
   {
     name: "Google Gemini",
-    image: "assets/images/tools/gemini-placeholder.svg",
+    image: "assets/images/tools/google-gemini-logo.svg",
+    alt: "Google Gemini AI platform",
   },
-  { name: "WordPress", image: "assets/images/tools/wordpress-placeholder.svg" },
-  { name: "Elementor", image: "assets/images/tools/elementor-placeholder.svg" },
-  { name: "Python", image: "assets/images/tools/python-placeholder.svg" },
   {
-    name: "JavaScript",
-    image: "assets/images/tools/javascript-placeholder.svg",
+    name: "Claude AI",
+    image: "assets/images/tools/claude-ai-logo.svg",
+    alt: "Claude AI platform",
   },
-  { name: "PHP", image: "assets/images/tools/php-placeholder.svg" },
-  { name: "HTML5", image: "assets/images/tools/html-placeholder.svg" },
-  { name: "CSS3", image: "assets/images/tools/css-placeholder.svg" },
-  { name: "REST API", image: "assets/images/tools/api-placeholder.svg" },
-  { name: "Webhooks", image: "assets/images/tools/webhooks-placeholder.svg" },
-  { name: "JSON", image: "assets/images/tools/json-placeholder.svg" },
-  { name: "OAuth", image: "assets/images/tools/oauth-placeholder.svg" },
+  {
+    name: "OpenRouter",
+    image: "assets/images/tools/openrouter-logo.svg",
+    alt: "OpenRouter AI model gateway",
+  },
+  {
+    name: "n8n",
+    image: "assets/images/tools/n8n-logo.svg",
+    alt: "n8n automation platform",
+  },
+  {
+    name: "Make.com",
+    image: "assets/images/tools/make-logo.svg",
+    alt: "Make.com automation platform",
+  },
+  {
+    name: "Zapier",
+    image: "assets/images/tools/zapier-logo.png",
+    alt: "Zapier automation platform",
+  },
+  {
+    name: "GoHighLevel",
+    image: "assets/images/tools/high level.png",
+    alt: "GoHighLevel CRM platform",
+  },
+  {
+    name: "Notion",
+    image: "assets/images/tools/notion-logo.svg",
+    alt: "Notion workspace platform",
+  },
   {
     name: "Google Workspace",
-    image: "assets/images/tools/google-workspace-placeholder.svg",
+    image: "assets/images/tools/google-workspace-logo.svg",
+    alt: "Google Workspace productivity suite",
   },
-  { name: "Slack", image: "assets/images/tools/slack-placeholder.svg" },
-  { name: "Gmail", image: "assets/images/tools/gmail-placeholder.svg" },
   {
     name: "Google Sheets",
-    image: "assets/images/tools/google-sheets-placeholder.svg",
+    image: "assets/images/tools/google-sheets-logo.svg",
+    alt: "Google Sheets spreadsheet platform",
   },
-  { name: "Git", image: "assets/images/tools/git-placeholder.svg" },
-  { name: "GitHub", image: "assets/images/tools/github-placeholder.svg" },
+  {
+    name: "Google Docs",
+    image: "assets/images/tools/google-docs-logo.svg",
+    alt: "Google Docs document platform",
+  },
+  {
+    name: "Google Drive",
+    image: "assets/images/tools/google-drive-logo.svg",
+    alt: "Google Drive cloud storage",
+  },
+  {
+    name: "Gmail",
+    image: "assets/images/tools/gmail-logo.svg",
+    alt: "Gmail email platform",
+  },
+  {
+    name: "Airtable",
+    image: "assets/images/tools/airtable-logo.svg",
+    alt: "Airtable database platform",
+  },
+  {
+    name: "Monday.com",
+    image: "assets/images/tools/monday-logo.svg",
+    alt: "Monday.com project management platform",
+  },
+  {
+    name: "Trello",
+    image: "assets/images/tools/trello-logo.svg",
+    alt: "Trello project management platform",
+  },
+  {
+    name: "Asana",
+    image: "assets/images/tools/asana-logo.svg",
+    alt: "Asana project management platform",
+  },
+  {
+    name: "Slack",
+    image: "assets/images/tools/slack-logo.svg",
+    alt: "Slack collaboration platform",
+  },
+  {
+    name: "REST API",
+    image: "assets/images/tools/rest-api-icon.svg",
+    alt: "REST API integration",
+  },
+  {
+    name: "Webhooks",
+    image: "assets/images/tools/webhooks-icon.png",
+    alt: "Webhook integration",
+  },
+  {
+    name: "JSON",
+    image: "assets/images/tools/json-logo.svg",
+    alt: "JSON data format",
+  },
+  {
+    name: "OAuth",
+    image: "assets/images/tools/oauth-icon.svg",
+    alt: "OAuth authorization",
+  },
+  {
+    name: "GraphQL",
+    image: "assets/images/tools/graphql-logo.svg",
+    alt: "GraphQL API technology",
+  },
+  {
+    name: "Python",
+    image: "assets/images/tools/python-logo.svg",
+    alt: "Python programming language",
+  },
+  {
+    name: "JavaScript",
+    image: "assets/images/tools/javascript-logo.svg",
+    alt: "JavaScript programming language",
+  },
+  {
+    name: "PHP",
+    image: "assets/images/tools/php-logo.svg",
+    alt: "PHP programming language",
+  },
+  {
+    name: "HTML5",
+    image: "assets/images/tools/html5-logo.svg",
+    alt: "HTML5 web technology",
+  },
+  {
+    name: "CSS3",
+    image: "assets/images/tools/css3-logo.svg",
+    alt: "CSS3 web styling technology",
+  },
+  {
+    name: "WordPress",
+    image: "assets/images/tools/wordpress-logo.png",
+    alt: "WordPress content management system",
+  },
+  {
+    name: "Elementor",
+    image: "assets/images/tools/elementor-logo.svg",
+    alt: "Elementor WordPress page builder",
+  },
+  {
+    name: "Git",
+    image: "assets/images/tools/git-logo.svg",
+    alt: "Git version control",
+  },
+  {
+    name: "GitHub",
+    image: "assets/images/tools/github-logo.svg",
+    alt: "GitHub development platform",
+  },
   {
     name: "Visual Studio Code",
-    image: "assets/images/tools/vscode-placeholder.svg",
+    image: "assets/images/tools/visual-studio-code-logo.svg",
+    alt: "Visual Studio Code editor",
   },
-  { name: "Postman", image: "assets/images/tools/postman-placeholder.svg" },
+  {
+    name: "Postman",
+    image: "assets/images/tools/postman-logo.svg",
+    alt: "Postman API testing platform",
+  },
 ];
 
 // ============================================================
 // AUTOMATION PROJECTS
-// Replace each title, description, image, tools list, and URL below.
+// Replace each title, description, image, tags list, and URL below.
 // Keep category values matched to the filter buttons:
 // GoHighLevel, n8n, Zapier, or Make.com.
 // ============================================================
 const automationProjects = [
   {
     id: "gohighlevelCrmWorkflow",
-    title: "GoHighLevel CRM Workflow",
+    title: "Membership Access Automation",
     category: "GoHighLevel",
-    image: "assets/images/automation/gohighlevel-placeholder.svg",
-    description: "A short project overview will be added here.",
-    tools: ["GoHighLevel", "CRM", "Automation"],
+    image: "assets/images/automation/Go High Level/03.1-paid.jpg",
+    description:
+      "Built a GoHighLevel membership system that organizes onboarding, renewal reminders, status changes, and internal contact updates.",
+    tags: [
+      "Membership Onboarding",
+      "Access Tagging",
+      "Contact Updates",
+      "Renewal Tracking",
+      "Status Management",
+      "Internal Notifications",
+    ],
     projectUrl: "#",
     secondaryLabel: "View Case Study",
     secondaryUrl: "#",
   },
   {
-    id: "aiLeadQualification",
-    title: "AI Lead Qualification Workflow",
+    id: "aiAgentAutomation",
+    title: "Facebook Page AI Agent",
     category: "n8n",
-    image: "assets/images/automation/n8n-placeholder.svg",
-    description: "Project details will be added soon.",
-    tools: ["n8n", "AI", "API"],
-    projectUrl: "#",
-    secondaryLabel: "View Workflow",
-    secondaryUrl: "#",
-  },
-  {
-    id: "applicationIntegration",
-    title: "Application Integration Workflow",
-    category: "Zapier",
-    image: "assets/images/automation/zapier-placeholder.svg",
-    description: "A short project overview will be added here.",
-    tools: ["Zapier", "Webhooks", "Application"],
-    projectUrl: "#",
-    secondaryLabel: "View Workflow",
-    secondaryUrl: "#",
-  },
-  {
-    id: "multiStepAutomation",
-    title: "Multi-Step Business Automation",
-    category: "Make.com",
-    image: "assets/images/automation/make-placeholder.svg",
-    description: "Project details will be added soon.",
-    tools: ["Make.com", "API", "Business Tools"],
+    image: "assets/images/automation/n8n/AI AGENT.JPG",
+    description:
+      "Built an AI agent that receives Facebook Page messages, retrieves relevant context, and prepares structured responses.",
+    tags: [
+      "Facebook Messenger",
+      "Webhook Validation",
+      "Document Retrieval",
+      "Gemini AI",
+      "Conversation Memory",
+      "API Responses",
+    ],
     projectUrl: "#",
     secondaryLabel: "View Case Study",
     secondaryUrl: "#",
   },
   {
     id: "crmLeadNurturing",
-    title: "CRM Lead Nurturing System",
+    title: "Membership Renewal Email Reminders Automation",
     category: "GoHighLevel",
-    image: "assets/images/automation/gohighlevel-placeholder.svg",
-    description: "A short project overview will be added here.",
-    tools: ["GoHighLevel", "Email Automation", "Pipeline"],
+    image: "assets/images/automation/Go High Level/4. Email Reminders.JPG",
+    description:
+      "Automated membership renewal reminders before and after renewal dates to create a more reliable follow-up process.",
+    tags: [
+      "Renewal Tracking",
+      "Date-Based Triggers",
+      "Email Sequences",
+      "Member Segmentation",
+      "Wait Conditions",
+      "Opportunity Updates",
+    ],
     projectUrl: "#",
     secondaryLabel: "View Case Study",
     secondaryUrl: "#",
   },
   {
-    id: "aiOperationsAssistant",
-    title: "AI Operations Assistant",
+    id: "aiJobApplicationAssistant",
+    title: "AI Job Application Assistant",
     category: "n8n",
-    image: "assets/images/automation/n8n-placeholder.svg",
-    description: "Project details will be added soon.",
-    tools: ["n8n", "OpenAI", "Google Workspace"],
-    projectUrl: "#",
-    secondaryLabel: "View Workflow",
-    secondaryUrl: "#",
-  },
-  {
-    id: "customerOnboarding",
-    title: "Customer Onboarding Automation",
-    category: "Zapier",
-    image: "assets/images/automation/zapier-placeholder.svg",
-    description: "A short project overview will be added here.",
-    tools: ["Zapier", "CRM", "Webhooks"],
+    image:
+      "assets/images/automation/n8n/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+    description:
+      "Built an AI workflow that finds matching job listings, tailors resume content, drafts applications, and records each result.",
+    tags: [
+      "Slack Trigger",
+      "Job Search API",
+      "Query Validation",
+      "OpenRouter AI",
+      "Structured Output",
+      "Google Docs",
+      "Gmail Drafts",
+      "Slack Notifications",
+    ],
     projectUrl: "#",
     secondaryLabel: "View Case Study",
     secondaryUrl: "#",
   },
   {
-    id: "crossPlatformDataWorkflow",
-    title: "Cross-Platform Data Workflow",
-    category: "Make.com",
-    image: "assets/images/automation/make-placeholder.svg",
-    description: "Project details will be added soon.",
-    tools: ["Make.com", "JSON", "HTTP Requests"],
+    id: "prospectNurturing",
+    title: "Lead Nurture",
+    category: "GoHighLevel",
+    image:
+      "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+    description:
+      "Automated prospect follow-up when leads enter a new pipeline stage, helping keep outreach consistent and organized.",
+    tags: [
+      "Pipeline Triggers",
+      "Lead Nurturing",
+      "Email Sequences",
+      "Timed Follow-Ups",
+      "Opportunity Tracking",
+    ],
     projectUrl: "#",
-    secondaryLabel: "View Workflow",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "spamCallDndAutomation",
+    title: "Spam Call DND Automation",
+    category: "GoHighLevel",
+    image:
+      "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+    description:
+      "Automatically applied inbound call restrictions to contacts identified as spam, reducing manual CRM cleanup.",
+    tags: [
+      "Call Dispositions",
+      "Spam Detection",
+      "Inbound DND",
+      "Contact Protection",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "aiAssistantChatbot",
+    title: "AI Assistant Chatbot",
+    category: "GoHighLevel",
+    image: "assets/images/automation/Go High Level/Chatbot.JPG",
+    description:
+      "Configured an AI assistant chatbot with defined conversation rules, knowledge guidance, and response boundaries.",
+    tags: [
+      "Conversational AI",
+      "Prompt Design",
+      "Bot Goals",
+      "Response Guidelines",
+      "Customer Support",
+      "Bot Testing",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "voiceAppointmentScheduler",
+    title: "Voice Appointment Scheduling System",
+    category: "n8n",
+    image: "assets/images/automation/n8n/AI RECEPTIONIST.JPG",
+    description:
+      "Built a voice appointment scheduling system that checks availability, manages bookings, and records structured call details.",
+    tags: [
+      "Vapi Voice Agent",
+      "OpenAI Assistant Logic",
+      "Google Calendar",
+      "Airtable Records",
+      "Tool Argument Extraction",
+      "Conditional Routing",
+      "Time Zone Conversion",
+      "Appointment Status Tracking",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "aiVideoContentRepurposing",
+    title: "AI Video Content Repurposing",
+    category: "Zapier",
+    image: "assets/images/automation/zapier/AI Content Repurposing.jpg",
+    description:
+      "Built a content workflow that transcribes new videos, generates blog drafts, and routes approved social content.",
+    tags: [
+      "Google Drive File Trigger",
+      "Video File Filtering",
+      "AI Transcription",
+      "Blog Post Generation",
+      "Conditional Path Routing",
+      "Facebook Page Publishing",
+      "LinkedIn Share Updates",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "aiClientOnboardingWorkspace",
+    title: "AI Client Onboarding Workspace",
+    category: "Zapier",
+    image:
+      "assets/images/automation/zapier/AI Intake Processing and Workspace Automation.jpg",
+    description:
+      "Processes intake data with Claude, creates Monday.com workspaces, assigns onboarding tasks, and sends internal completion updates.",
+    tags: [
+      "Typeform Intake",
+      "Google Sheets Logging",
+      "Claude AI Content Generation",
+      "Conditional Path Routing",
+      "Monday.com GraphQL",
+      "JavaScript Data Parsing",
+      "HTML Document Import",
+      "Email Notifications",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "asanaLeadEngagement",
+    title: "Asana Lead Engagement",
+    category: "Zapier",
+    image: "assets/images/automation/zapier/Asana CRM Lead Engagement.jpg",
+    description:
+      "Connects Asana lead stages with folder creation, follow-up emails, welcome messages, and service recommendations.",
+    tags: [
+      "Asana Task Updates",
+      "Lead Stage Routing",
+      "Google Drive Folders",
+      "Gmail Follow-Ups",
+      "Scheduled Delays",
+      "Email Response Checks",
+      "AI Email Personalization",
+      "Service Recommendations",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "leadEnrichmentPriorityRouting",
+    title: "Lead Enrichment and Priority Routing",
+    category: "Zapier",
+    image: "assets/images/automation/zapier/Automate Leads Enrichment.JPG",
+    description:
+      "Enriches incoming leads, routes them by priority, records key details, and prepares personalized outreach.",
+    tags: [
+      "Webhook Intake",
+      "Apollo Enrichment",
+      "Company URL Extraction",
+      "Lead Priority Routing",
+      "Google Sheets Storage",
+      "Slack Alerts",
+      "AI Email Drafting",
+      "Gmail Notifications",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "metaAdsKpiReporting",
+    title: "Meta Ads KPI Reporting",
+    category: "Zapier",
+    image: "assets/images/automation/zapier/Daily KPI Dashboard.JPG",
+    description:
+      "Collects Meta Ads data, calculates daily and monthly KPIs, and updates Google Sheets reporting dashboards.",
+    tags: [
+      "Scheduled Reporting",
+      "Meta Ads API",
+      "Webhook Data Collection",
+      "JavaScript Aggregation",
+      "Duplicate Prevention",
+      "Google Sheets Reporting",
+      "Daily KPI Calculations",
+      "Monthly Dashboard Updates",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
+    secondaryUrl: "#",
+  },
+  {
+    id: "xeroTransactionCsvExport",
+    title: "Xero Transaction CSV Export",
+    category: "Make.com",
+    image:
+      "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+    description:
+      "Exports Xero transactions, creates a CSV report, and attaches it to completed Asana tasks.",
+    tags: [
+      "Asana Task Trigger",
+      "Xero API Request",
+      "Transaction Data Export",
+      "Router Logic",
+      "Iterator Processing",
+      "Google Sheets Staging",
+      "CSV File Generation",
+      "Attachment Upload",
+    ],
+    projectUrl: "#",
+    secondaryLabel: "View Case Study",
     secondaryUrl: "#",
   },
 ];
@@ -175,11 +522,11 @@ const automationProjects = [
 // ============================================================
 const automationProjectDetails = {
   gohighlevelCrmWorkflow: {
-    eyebrow: "Case Study Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
-    intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
+    eyebrow: "Case Study",
+    title: "Membership Access Automation",
+    intro: "Automated onboarding, renewal reminders, and membership tracking.",
+    coverImage:
+      "assets/images/automation/Go High Level/01-membership-access-automation.JPG",
     coverAlt: "Placeholder image for the project cover",
 
     // Keep these four sections in this order.
@@ -187,598 +534,1120 @@ const automationProjectDetails = {
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Workflow Automation",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "I helped build and organize workflows based on the requirements provided by the project team.",
+          "The automation handled contact updates, internal notifications, follow-ups, and other recurring CRM tasks.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Configured workflow triggers and actions.",
+          "Updated contact fields, tags, and statuses.",
+          "Connected related automation sequences.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image: "assets/images/automation/Go High Level/02-new-member.jpg",
+        imageAlt: "GoHighLevel membership access automation workflow",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Managing Multiple Workflow Paths",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "The workflows included several conditions, delays, and branches that needed to run in the correct order.",
+          "The main challenge was keeping each automation organized, reliable, and easy to review.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Handled multiple contact paths.",
+          "Reduced repetitive manual tasks.",
+          "Maintained consistent CRM records.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image: "assets/images/automation/Go High Level/03.1-paid.jpg",
+        imageAlt: "Workflow conditions and automation branches",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Structured Automation Setup",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured the required triggers, conditions, internal notifications, math operation, and  actions inside GoHighLevel.",
+          "Each workflow was divided into clear stages to make testing, updates, and maintenance easier.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Trigger → evaluate the contact details.",
+          "Condition → select the correct workflow path.",
+          "Action → update records or continue automation.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/Go High Level/03.2-paid.jpg",
+        imageAlt: "Structured CRM automation workflow",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Reliable Workflow Execution",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "I reviewed each workflow path to confirm that contacts entered the correct branch and actions ran as expected.",
+          "Fallback paths and validation checks were used to prevent incomplete records from continuing through the automation.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Tested triggers, conditions, and delays.",
+          "Verified field, tag, and status updates.",
+          "Checked fallback paths and notifications.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image:
+          "assets/images/automation/Go High Level/03-email-notifications.jpg",
+        imageAlt: "Workflow testing and validation process",
       },
     ],
   },
-  aiLeadQualification: {
-    eyebrow: "Workflow Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+  aiAgentAutomation: {
+    eyebrow: "Automation Case Study",
+    title: "Facebook Page AI Agent",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "An n8n automation that processes Facebook Page messages and generates contextual AI responses.",
 
-    // Keep these four sections in this order.
+    coverImage: "assets/images/automation/n8n/AI AGENT.JPG",
+    coverAlt: "n8n Facebook Page AI agent workflow",
+
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Automated Facebook Responses",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "I built an AI agent that receives customer messages from a Facebook Page through a webhook.",
+          "It uses reference content and conversation memory to generate relevant replies.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Received Facebook Page messages.",
+          "Generated contextual AI replies.",
+          "Maintained conversation history.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image: "assets/images/automation/n8n/AI AGENT.JPG",
+        imageAlt: "Facebook Page AI messaging workflow",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Handling Page Messages",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "Incoming messages needed to be validated and processed before reaching the AI agent.",
+          "The system also needed context to provide consistent responses.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Validated webhook requests.",
+          "Filtered incoming message data.",
+          "Maintained response context.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image: "assets/images/automation/n8n/AI AGENT.JPG",
+        imageAlt: "Facebook webhook and message filtering",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "AI-Powered Message Processing",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I connected Facebook webhooks, document retrieval, an AI model, memory, and an API request.",
+          "The generated response is sent back to the Facebook Page through the Messenger API.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Facebook webhook → receive message.",
+          "AI agent → generate reply.",
+          "Messenger API → send response.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/n8n/AI AGENT.JPG",
+        imageAlt: "Facebook Messenger AI agent workflow",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Reliable Message Delivery",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "I tested webhook verification, incoming messages, AI responses, and the final API request.",
+          "Conditional paths prevented invalid requests from continuing.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Tested webhook verification.",
+          "Checked AI response output.",
+          "Verified Messenger API delivery.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image: "assets/images/automation/n8n/AI AGENT.JPG",
+        imageAlt: "Facebook AI agent testing",
       },
     ],
   },
-  applicationIntegration: {
-    eyebrow: "Workflow Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+  aiJobApplicationAssistant: {
+    eyebrow: "Automation Case Study",
+    title: "AI Job Application Assistant",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "I built this workflow to validate job-search requests, collect listings, tailor resume content, and prepare application outputs.",
 
-    // Keep these four sections in this order.
+    coverImage:
+      "assets/images/automation/n8n/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+    coverAlt:
+      "n8n workflow connecting Slack, job search processing, AI resume optimization, Google Docs, Gmail, and notifications",
+
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Automated Job Application Preparation",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "I built a workflow that starts from a Slack request and validates whether the message relates to a job search.",
+          "Valid requests retrieve job listings, process each result, tailor resume content with AI, and prepare document and application outputs.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Slack starts the workflow.",
+          "Job listings are processed individually.",
+          "Documents, drafts, and summaries are produced.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image: "assets/images/automation/n8n/SLACK.JPG",
+        imageAlt:
+          "Overview of the job search and resume optimization workflow in n8n",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Managing Multiple Application Paths",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "The process required separating invalid requests, empty search results, and valid job listings before resume generation could begin.",
+          "Each listing also needed consistent resume sections, proposal content, email fields, document updates, and final notifications.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Invalid search requests required early routing.",
+          "Multiple listings needed controlled iteration.",
+          "Application outputs required consistent formatting.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image: "assets/images/automation/n8n/resume template.JPG",
+        imageAlt:
+          "Conditional routing and loop structure for job application processing",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Connected Resume and Outreach Flow",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured split and loop steps to process each job while reading the source resume from Google Docs.",
+          "An OpenRouter chat model and structured output parser generate tailored content before the workflow copies, updates, and distributes the results.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Slack request → validate the job-search query.",
+          "Job results → loop through listings and generate structured content.",
+          "Updated document → create an email draft and send a Slack summary.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/n8n/RESUME.JPG",
+        imageAlt:
+          "Connected n8n nodes for AI resume generation, document updates, email drafts, and Slack reporting",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Validation and Output Checks",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "Visible conditions check query relevance, search results, and document availability before later actions continue.",
+          "Recommended validation should also confirm structured AI output, required job fields, successful document updates, and delivery of final messages.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Reject unrelated or incomplete search requests.",
+          "Verify AI output matches the required JSON structure.",
+          "Confirm document, email, and Slack actions complete.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image:
+          "assets/images/automation/n8n/AI JOBS SCRAPER + RESUME OPTIMIZER.JPG",
+        imageAlt:
+          "Workflow validation gates for queries, job results, documents, and application outputs",
       },
     ],
   },
-  multiStepAutomation: {
-    eyebrow: "Case Study Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+  aiVideoContentRepurposing: {
+    eyebrow: "Automation Case Study",
+    title: "AI Video Content Repurposing",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "A  file-driven automation that turns new video uploads into AI-generated blog content and social posts.",
 
-    // Keep these four sections in this order.
+    coverImage: "assets/images/automation/zapier/AI Content Repurposing.JPG",
+    coverAlt:
+      "Zapier workflow connecting Google Drive, AI content generation, conditional paths, Facebook Pages, and LinkedIn",
+
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Video-to-Social Content Flow",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "I built this  workflow to monitor a google drive folder for new video files on a scheduled interval.",
+          "Accepted files are transcribed, converted into blog content, and routed into Facebook Page and LinkedIn publishing actions.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Google Drive supplies new source files.",
+          "AI produces transcription and blog copy.",
+          "Two paths deliver social media outputs.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image:
+          "assets/images/automation/zapier/AI Content Repurposing-Google Drive.JPG",
+        imageAlt:
+          "Complete Zapier workflow for processing video files and publishing generated social content",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Reliable Input and Routing Control",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "The automation needed to prevent unsuitable files from reaching the AI processing steps. The trigger configuration also excludes deleted items.",
+          "Generated content had to follow separate branch conditions without requiring repeated manual publishing work.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Validate incoming file criteria.",
+          "Control scheduled folder polling.",
+          "Keep branch-specific publishing consistent.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image:
+          "assets/images/automation/zapier/AI Content Repurposing-Google Drive Filter.JPG",
+        imageAlt:
+          "Google Drive trigger configuration for monitoring a selected video folder on a scheduled interval",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Connected Repurposing Pipeline",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured a linear sequence for intake, filtering, transcription, and blog generation. A path splitter then separates the publishing logic.",
+          "Both branches apply their own conditions before creating a Facebook Page post and LinkedIn share update.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Google Drive → detect a new file in the selected folder.",
+          "Filter and AI → validate, transcribe, and generate blog content.",
+          "Paths → publish approved copy to Facebook Pages and LinkedIn.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/zapier/AI Content Repurposing- AI.JPG",
+        imageAlt:
+          "Zapier pipeline showing file filtering, AI transcription, blog generation, and conditional social publishing",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Validation and Output Review",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "Visible filters and path conditions provide checkpoints before content reaches the publishing steps. Dedicated retry or error branches are not shown.",
+          "Recommended checks would confirm file access, complete AI text, and readable final post formatting across both destinations.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Reject files that fail the initial filter.",
+          "Confirm each path receives usable generated text.",
+          "Review final posts for completeness and formatting.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image: "assets/images/automation/zapier/fb post.JPG",
+        imageAlt:
+          "Generated Facebook Page post used to review automated content structure and final formatting",
+      },
+    ],
+  },
+  prospectNurturing: {
+    eyebrow: "Automation Case Study",
+    title: "Lead Nurture Email Automation",
+    intro:
+      "A workflow that sends a timed email sequence to nurture prospects and maintain consistent follow-ups.",
+
+    coverImage:
+      "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+    coverAlt: "GoHighLevel prospect nurture email workflow",
+
+    sections: [
+      {
+        number: "01",
+        label: "Project Overview",
+        title: "Automated Prospect Follow-Ups",
+        paragraphs: [
+          "I built a workflow that automatically follows up with prospects after they enter a selected pipeline stage.",
+          "The sequence sends multiple emails with scheduled delays between each message.",
+        ],
+        bullets: [
+          "Triggered by a pipeline-stage update.",
+          "Sent a structured email sequence.",
+          "Reduced repetitive follow-up tasks.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+        imageAlt: "Prospect nurture workflow overview",
+      },
+      {
+        number: "02",
+        label: "Challenge",
+        title: "Maintaining Consistent Follow-Ups",
+        paragraphs: [
+          "Prospects needed to receive timely messages without requiring manual follow-up from the team.",
+          "Each email also needed to be delivered in the correct order and at the intended interval.",
+        ],
+        bullets: [
+          "Managed multiple follow-up emails.",
+          "Maintained consistent timing.",
+          "Prevented missed communications.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/8. Prospect Nurture Workflow.JPG",
+        imageAlt: "Prospect follow-up automation sequence",
+      },
+      {
+        number: "03",
+        label: "Solution and Workflow",
+        title: "Timed Email Sequence",
+        paragraphs: [
+          "I configured a pipeline trigger followed by email actions and wait steps inside GoHighLevel.",
+          "The workflow continues automatically until the complete nurture sequence has been delivered.",
+        ],
+        bullets: [
+          "Pipeline update → start workflow.",
+          "Email action → send follow-up.",
+          "Wait step → continue the sequence.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/8.1 Prospect Nurture Workflow.JPG",
+        imageAlt: "Timed prospect nurture email sequence",
+      },
+      {
+        number: "04",
+        label: "Error Handling and Testing",
+        title: "Reliable Workflow Execution",
+        paragraphs: [
+          "I tested the trigger, wait periods, and email actions to confirm that the sequence ran in the correct order.",
+          "The workflow was reviewed to prevent duplicate enrollment and unintended follow-ups.",
+        ],
+        bullets: [
+          "Tested the pipeline trigger.",
+          "Verified email and delay order.",
+          "Checked workflow completion.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/8.1 Prospect Nurture Workflow.JPG",
+        imageAlt: "Prospect nurture workflow testing",
       },
     ],
   },
   crmLeadNurturing: {
-    eyebrow: "Case Study Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+    eyebrow: "Automation Case Study",
+    title: "Membership Renewal Email Reminders",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "A workflow that sends scheduled email reminders based on membership renewal dates.",
+
+    coverImage: "assets/images/automation/Go High Level/4. Email Reminders.JPG",
+    coverAlt: "GoHighLevel membership renewal email workflow",
 
     // Keep these four sections in this order.
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Automated Renewal Reminders",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "I built a workflow that automatically sends reminder emails before and after a membership renewal date.",
+          "The automation uses contact dates and membership types to deliver the appropriate email sequence.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Triggered by renewal-date updates.",
+          "Supported multiple membership types.",
+          "Sent reminders at scheduled intervals.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image: "assets/images/automation/Go High Level/4. Email Reminders.JPG",
+        imageAlt: "Membership renewal reminder workflow overview",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Managing Reminder Schedules",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "The workflow required several date-based delays and reminder emails to run in the correct order.",
+          "Each contact also needed to enter the appropriate path based on their membership type.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Managed multiple reminder dates.",
+          "Separated membership paths.",
+          "Prevented incorrect workflow routing.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image: "assets/images/automation/Go High Level/4.1 Email Reminders.JPG",
+        imageAlt: "Date-based email reminder workflow",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Date-Based Email Sequence",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured triggers, conditions, wait steps, and email actions using the provided workflow requirements.",
+          "The sequence continues through scheduled reminders until the renewal follow-up process is complete.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Renewal date → start workflow.",
+          "Membership type → select email path.",
+          "Wait step → send scheduled reminder.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/Go High Level/4.1 Email Reminders.JPG",
+        imageAlt: "Extended membership reminder email sequence",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Reliable Email Delivery",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "I tested each workflow path to confirm that reminders were sent at the intended times.",
+          "Fallback conditions were included to stop contacts that did not match the required criteria.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Tested triggers and date delays.",
+          "Verified each email sequence.",
+          "Checked conditions and fallback paths.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image: "assets/images/automation/Go High Level/4.1 Email Reminders.JPG",
+        imageAlt: "Membership email automation testing",
       },
     ],
   },
-  aiOperationsAssistant: {
-    eyebrow: "Workflow Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+  voiceAppointmentScheduler: {
+    eyebrow: "Automation Case Study",
+    title: "AI Voice Assistant Appointment Scheduling System",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "I built a voice-driven scheduling workflow that processes appointment requests, manages calendar events, and stores structured call outcomes.",
+
+    coverImage: "assets/images/automation/n8n/AI RECEPTIONIST.JPG",
+    coverAlt:
+      "n8n workflow with separate branches for appointment availability, booking, rescheduling, cancellation, and call results",
 
     // Keep these four sections in this order.
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Voice Appointment Management",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "The automation receives scheduling requests from a configured voice agent and passes each tool call into the workflow.",
+          "It checks availability, manages calendar events, returns a spoken result, and stores appointment or call records.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Voice-agent tool call trigger.",
+          "Four appointment management operations.",
+          "Calendar and record-storage outputs.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image: "assets/images/automation/n8n/vapi-1.JPG",
+        imageAlt:
+          "Voice assistant configuration for handling appointment scheduling conversations and connected tool requests",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Consistent Multi-Tool Requests",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "Conversational requests had to be converted into reliable fields for availability, booking, rescheduling, and cancellation actions.",
+          "Nested arguments, required parameters, time zones, and status values also needed consistent handling across every path.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Nested voice-tool arguments.",
+          "Different fields for each action.",
+          "Consistent dates and booking states.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image: "assets/images/automation/n8n/vapi-2.JPG",
+        imageAlt:
+          "Vapi settings for calendar tools and structured appointment parameters",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Routed Calendar Operations",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured separate branches that extract tool arguments, map appointment fields, and route requests to the correct calendar action.",
+          "The resulting data is formatted for the voice response and written to connected records for later reference.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Voice tool call → extract and normalize arguments.",
+          "Request condition → route to the matching calendar action.",
+          "Calendar result → respond and store structured records.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/n8n/airtable-1.JPG",
+        imageAlt: "Airtable Call Recording",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Validated Scheduling Outputs",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "The workflow uses conditions, fallback branches, safe argument remapping, and JSON escaping before processing calendar requests.",
+          "Recommended checks include missing fields, invalid times, unavailable slots, and accurate status updates in the final records.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Validate required tool parameters.",
+          "Check unavailable-slot fallback responses.",
+          "Confirm booking status and linked records.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image: "assets/images/automation/n8n/airtable-2.JPG",
+        imageAlt:
+          "Appointment records showing confirmed, cancelled, and rescheduled status outputs for workflow validation",
       },
     ],
   },
-  customerOnboarding: {
-    eyebrow: "Case Study Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+  aiClientOnboardingWorkspace: {
+    eyebrow: "Automation Case Study",
+    title: "AI Client Onboarding",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "I built a workflow that processes form data, creates AI content, sets up Monday.com resources, and sends an internal update.",
 
+    coverImage:
+      "assets/images/automation/zapier/AI Intake Processing and Workspace Automation.jpg",
+    coverAlt:
+      "Zapier workflow for form intake, AI content, Monday.com setup, and email notifications",
     // Keep these four sections in this order.
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Automated Onboarding Setup",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "The workflow starts when a new form is submitted. The form answers are also saved in Google Sheets.",
+          "Claude creates useful content from the answers. Zapier then creates Monday.com resources and sends an internal email.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "A Typeform submission starts the process.",
+          "Claude creates profiles, summaries, and headlines.",
+          "Monday.com and email actions finish the setup.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image:
+          "assets/images/automation/zapier/AI Intake Processing and Workspace Automation Trigger.jpg",
+        imageAlt:
+          "Zapier workflow showing form intake, AI processing, workspace setup, and email delivery",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Handling Many Connected Steps",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "The same form data was needed for documents, board setup, assignments, and notifications.",
+          "Each new folder, board, group, and item created its own ID. These IDs had to move correctly between steps.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Many actions depended on earlier results.",
+          "AI text needed clean formatting.",
+          "Board IDs and folder IDs needed careful mapping.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image:
+          "assets/images/automation/zapier/AI Intake Processing and Workspace Automation Conditional Paths.jpg",
+        imageAlt:
+          "Zapier workflow with connected steps, generated IDs, and formatted AI content",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Two Clear Processing Paths",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured one path to create the Monday.com folder, board, group, and information document.",
+          "The second path cleans the AI headlines, creates a board item, adds an owner and date, and posts the headlines.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Typeform → save answers and send them to Claude.",
+          "Workspace path → create folders, boards, groups, and documents.",
+          "Headline path → format content, create an item, and add an update.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image:
+          "assets/images/automation/zapier/AI Intake Processing and Workspace Automation Subfolder.JPG",
+        imageAlt:
+          "Zapier workflow with separate workspace creation and headline processing paths",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Checking Important Outputs",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "The workflow checks that form responses exist before starting the main paths. Code steps also clean IDs, text, and HTML.",
+          "Recommended checks include reviewing created resources, document formatting, assignments, dates, headlines, and email delivery.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Check that every required form field is present.",
+          "Confirm that all Monday.com IDs are returned.",
+          "Review the final document, board item, and email.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image:
+          "assets/images/automation/zapier/AI Intake Processing and Workspace Automation Internal Notif.JPG",
+        imageAlt:
+          "Zapier workflow checks for form data, Monday.com IDs, document output, and email delivery",
       },
     ],
   },
-  crossPlatformDataWorkflow: {
-    eyebrow: "Workflow Placeholder",
-    title: "Lorem Ipsum Dolor Sit Amet",
+  asanaLeadEngagement: {
+    eyebrow: "Automation Case Study",
+    title: "Asana Lead Engagement",
     intro:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    coverImage: "assets/images/project-details/project-cover-placeholder.svg",
-    coverAlt: "Placeholder image for the project cover",
+      "I built a lead management workflow that responds to Asana stage changes with folders, tasks, follow-ups, and personalized emails.",
 
-    // Keep these four sections in this order.
+    coverImage: "assets/images/automation/zapier/Asana CRM Lead Engagement.jpg",
+    coverAlt:
+      "Zapier workflow connecting Asana lead stages with Google Drive, Gmail, delays, filters, and AI email writing",
+
     sections: [
       {
         number: "01",
         label: "Project Overview",
-        title: "Lorem Ipsum Dolor Sit",
+        title: "Stage-Based Lead Actions",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem, sed facilisis lectus neque vitae arcu.",
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
+          "The workflow starts when a task is updated in Asana. Zapier checks the lead stage and sends it to the correct path.",
+          "Each path creates the required folder, task, follow-up, welcome email, or service recommendation.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "Sed do eiusmod tempor incididunt ut labore et dolore.",
-          "Ut enim ad minim veniam, quis nostrud exercitation.",
+          "Asana task updates start the workflow.",
+          "Five paths cover different lead stages.",
+          "Google Drive, Gmail, and AI complete the actions.",
         ],
-        image: "assets/images/project-details/project-cover-placeholder.svg",
-        imageAlt: "Placeholder image for the project overview",
+        image: "assets/images/automation/zapier/Asana CRM Lead Engagement.jpg",
+        imageAlt:
+          "Zapier overview showing five automation paths based on Asana lead stages",
       },
       {
         number: "02",
         label: "Challenge",
-        title: "Consectetur Adipiscing Elit",
+        title: "Keeping Leads Moving",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+          "Different lead stages required different actions and messages. Handling these steps manually could cause missed follow-ups or inconsistent communication.",
+          "Some paths also needed delays, response checks, files, and personalized email content before continuing.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet, consectetur.",
-          "Ut enim ad minim veniam, quis nostrud.",
-          "Excepteur sint occaecat cupidatat non proident.",
+          "Each stage required a separate action.",
+          "Follow-ups needed controlled timing.",
+          "Emails needed the correct lead information.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the project challenge",
+        image: "assets/images/automation/zapier/Asana CRM Lead Engagement.jpg",
+        imageAlt:
+          "Zapier workflow showing separate lead stages, delayed follow-ups, and personalized communication",
       },
       {
         number: "03",
         label: "Solution and Workflow",
-        title: "Sed Do Eiusmod Tempor",
+        title: "Five Connected Paths",
         paragraphs: [
-          "Praesent non velit vitae lorem tempor luctus. Curabitur feugiat, sem vel feugiat faucibus, neque justo luctus nibh, vitae consequat sapien erat nec lacus.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere, mauris sed consequat posuere, augue justo tincidunt lorem.",
+          "I configured Zapier Paths to route updated Asana tasks by their current lead stage.",
+          "The paths use Google Drive, Asana, Gmail, filters, delays, and AI writing steps to complete each process.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet → consectetur adipiscing elit.",
-          "Sed do eiusmod tempor → incididunt ut labore.",
-          "Ut enim ad minim veniam → quis nostrud exercitation.",
+          "Ready to Start → create a Drive folder and an Asana content task.",
+          "No Response or Quoted → send follow-ups, wait, and check for replies.",
+          "Approved or Closed → prepare personalized welcome or recommendation emails.",
         ],
-        image: "assets/images/project-details/project-process-placeholder.svg",
-        imageAlt: "Placeholder image for the solution and workflow",
+        image: "assets/images/automation/zapier/Asana CRM Lead Engagement.jpg",
+        imageAlt:
+          "Zapier solution connecting Asana stages to folders, follow-ups, welcome emails, and recommendations",
       },
       {
         number: "04",
         label: "Error Handling and Testing",
-        title: "Ut Labore Et Dolore Magna",
+        title: "Checking Routes and Replies",
         paragraphs: [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.",
-          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.",
+          "Path conditions prevent actions from running for the wrong lead stage. Filters also check email activity before later follow-ups are sent.",
+          "Recommended checks should confirm folder creation, task details, delay timing, file retrieval, and final email content.",
         ],
         bullets: [
-          "Lorem ipsum dolor sit amet retry placeholder.",
-          "Consectetur adipiscing elit validation placeholder.",
-          "Sed do eiusmod tempor notification placeholder.",
+          "Confirm every Asana stage enters the correct path.",
+          "Check reply filters before sending another follow-up.",
+          "Review folders, files, tasks, and outgoing emails.",
         ],
-        image: "assets/images/project-details/project-result-placeholder.svg",
-        imageAlt: "Placeholder image for testing and error handling",
+        image: "assets/images/automation/zapier/Asana CRM Lead Engagement.jpg",
+        imageAlt:
+          "Zapier validation steps covering path conditions, email filters, files, tasks, and final messages",
+      },
+    ],
+  },
+  spamCallDndAutomation: {
+    eyebrow: "Automation Case Study",
+    title: "Spam Call DND Automation",
+    intro:
+      "A GoHighLevel workflow that automatically enables inbound call restrictions for contacts marked as spam.",
+
+    coverImage:
+      "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+    coverAlt: "GoHighLevel spam call DND automation workflow",
+
+    sections: [
+      {
+        number: "01",
+        label: "Project Overview",
+        title: "Automated Spam Call Control",
+        paragraphs: [
+          "I built a workflow that detects contacts marked with a spam-related call result.",
+          "The automation then enables call restrictions without requiring a manual CRM update.",
+        ],
+        bullets: [
+          "Triggered by call details.",
+          "Detected spam-labeled contacts.",
+          "Updated communication settings.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+        imageAlt: "Spam call control automation overview",
+      },
+      {
+        number: "02",
+        label: "Challenge",
+        title: "Reducing Unwanted Calls",
+        paragraphs: [
+          "Spam contacts needed to be restricted quickly to prevent repeated unwanted calls.",
+          "Manually updating each contact would be repetitive and could lead to missed records.",
+        ],
+        bullets: [
+          "Identified spam call results.",
+          "Reduced manual contact updates.",
+          "Prevented repeated call activity.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+        imageAlt: "Spam contact identification workflow",
+      },
+      {
+        number: "03",
+        label: "Solution and Workflow",
+        title: "Call-Based DND Update",
+        paragraphs: [
+          "I configured a call-details trigger that checks for the required disposition.",
+          "When the condition is matched, the workflow automatically enables the contact’s call DND setting.",
+        ],
+        bullets: [
+          "Call completed → check disposition.",
+          "Spam detected → start automation.",
+          "Contact matched → enable call DND.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+        imageAlt: "Call-triggered DND workflow",
+      },
+      {
+        number: "04",
+        label: "Error Handling and Testing",
+        title: "Accurate Contact Updates",
+        paragraphs: [
+          "I tested the trigger and action to ensure only matching contacts received the DND update.",
+          "Non-matching call results were left unchanged to avoid restricting valid contacts.",
+        ],
+        bullets: [
+          "Tested the call trigger.",
+          "Verified disposition matching.",
+          "Confirmed the DND update.",
+        ],
+        image:
+          "assets/images/automation/Go High Level/Auto-enable Inbound DND (Calls) for spam-labeled contacts.JPG",
+        imageAlt: "Call DND workflow testing",
+      },
+    ],
+  },
+  aiAssistantChatbot: {
+    eyebrow: "AI Automation Case Study",
+    title: "AI Assistant Chatbot",
+    intro:
+      "An AI chatbot configured to provide helpful, consistent, and professional responses to customer questions.",
+
+    coverImage: "assets/images/automation/Go High Level/Chatbot.JPG",
+    coverAlt: "AI assistant chatbot configuration dashboard",
+
+    sections: [
+      {
+        number: "01",
+        label: "Project Overview",
+        title: "Customer Support Chatbot",
+        paragraphs: [
+          "I configured an AI chatbot to assist customers with common questions and basic support requests.",
+          "The chatbot follows defined personality, communication, and response guidelines.",
+        ],
+        bullets: [
+          "Configured the chatbot personality.",
+          "Defined its primary support goal.",
+          "Added conversation guidelines.",
+        ],
+        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        imageAlt: "AI customer support chatbot setup",
+      },
+      {
+        number: "02",
+        label: "Challenge",
+        title: "Creating Consistent Responses",
+        paragraphs: [
+          "The chatbot needed to provide useful answers while maintaining a clear and professional tone.",
+          "It also needed instructions for handling questions without producing confusing or unrelated responses.",
+        ],
+        bullets: [
+          "Maintained a consistent tone.",
+          "Kept responses clear and concise.",
+          "Defined appropriate bot behavior.",
+        ],
+        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        imageAlt: "AI chatbot response settings",
+      },
+      {
+        number: "03",
+        label: "Solution and Workflow",
+        title: "Structured Prompt Setup",
+        paragraphs: [
+          "I created structured instructions covering the chatbot’s personality, goal, and conversation rules.",
+          "These guidelines help the assistant understand how to respond during customer interactions.",
+        ],
+        bullets: [
+          "Personality → set communication style.",
+          "Goal → define the chatbot’s purpose.",
+          "Guidelines → control response behavior.",
+        ],
+        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        imageAlt: "Structured AI chatbot prompt",
+      },
+      {
+        number: "04",
+        label: "Error Handling and Testing",
+        title: "Conversation Testing",
+        paragraphs: [
+          "I tested the chatbot using different questions to review its tone, clarity, and response quality.",
+          "The instructions were refined to improve consistency and reduce unclear answers.",
+        ],
+        bullets: [
+          "Tested common user questions.",
+          "Reviewed response accuracy.",
+          "Refined conversation instructions.",
+        ],
+        image: "assets/images/automation/Go High Level/Chatbot.JPG",
+        imageAlt: "AI chatbot conversation testing",
+      },
+    ],
+  },
+  leadEnrichmentPriorityRouting: {
+    eyebrow: "Automation Case Study",
+    title: "Lead Enrichment and Priority Routing",
+    intro:
+      "I built a workflow that enriches incoming leads, checks their priority, and sends the correct sales notification.",
+
+    coverImage: "assets/images/automation/zapier/Automate Leads Enrichment.JPG",
+    coverAlt:
+      "Zapier workflow for lead enrichment, priority routing, data storage, sales alerts, and AI email drafting",
+
+    sections: [
+      {
+        number: "01",
+        label: "Project Overview",
+        title: "Automated Lead Processing",
+        paragraphs: [
+          "The workflow starts when new lead information arrives through a webhook. It extracts the company website and enriches the lead through an external service.",
+          "Zapier then sends the lead through a high-priority or low-priority path. Each path completes the correct storage and communication actions.",
+        ],
+        bullets: [
+          "A webhook receives new lead details.",
+          "Apollo adds company information.",
+          "Priority rules select the final actions.",
+        ],
+        image: "assets/images/automation/zapier/Automate Leads Enrichment.JPG",
+        imageAlt:
+          "Zapier lead processing workflow with webhook intake, company enrichment, and two priority paths",
+      },
+      {
+        number: "02",
+        label: "Challenge",
+        title: "Sorting Leads Quickly",
+        paragraphs: [
+          "Incoming lead data needed more company information before the sales team could review it. The workflow also needed to separate important leads from lower-priority leads.",
+          "Each path required different actions without mixing records or sending the wrong notification.",
+        ],
+        bullets: [
+          "Lead details arrived with limited company data.",
+          "Priority decisions needed clear conditions.",
+          "Sales messages needed the correct lead information.",
+        ],
+        image: "assets/images/automation/zapier/Automate Leads Enrichment.JPG",
+        imageAlt:
+          "Zapier workflow showing lead enrichment requirements and separate high-priority and low-priority routes",
+      },
+      {
+        number: "03",
+        label: "Solution and Workflow",
+        title: "Two Priority Paths",
+        paragraphs: [
+          "I connected the webhook to a Formatter step that prepares the company URL. A second webhook sends the company data to Apollo for enrichment.",
+          "High-priority leads are saved and shared with the sales team. The workflow also uses AI to prepare personalized email content.",
+        ],
+        bullets: [
+          "Webhook → receive lead data and prepare the company URL.",
+          "Apollo enrichment → add company details and check priority.",
+          "Priority path → store the lead and send the correct notification.",
+        ],
+        image: "assets/images/automation/zapier/Automate Leads Enrichment.JPG",
+        imageAlt:
+          "Zapier solution connecting webhook intake, Apollo enrichment, Google Sheets, Slack, AI, and Gmail",
+      },
+      {
+        number: "04",
+        label: "Error Handling and Testing",
+        title: "Checking Lead Outputs",
+        paragraphs: [
+          "The visible path conditions help prevent leads from entering the wrong route. Each route runs only when its priority rules are met.",
+          "Recommended checks should confirm required webhook fields, enrichment responses, priority results, saved records, and outgoing messages.",
+        ],
+        bullets: [
+          "Check that required lead fields are present.",
+          "Confirm enrichment returns usable company data.",
+          "Review routing, storage, alerts, and email content.",
+        ],
+        image: "assets/images/automation/zapier/Automate Leads Enrichment.JPG",
+        imageAlt:
+          "Zapier workflow validation checks for lead fields, enrichment results, routing, storage, and notifications",
+      },
+    ],
+  },
+  metaAdsKpiReporting: {
+    eyebrow: "Automation Case Study",
+    title: "Meta Ads KPI Reporting",
+    intro:
+      "I built a scheduled reporting workflow that collects Meta Ads data, calculates KPIs, and updates a Google Sheets dashboard.",
+
+    coverImage: "assets/images/automation/zapier/Daily KPI Dashboard.JPG",
+    coverAlt:
+      "Zapier workflow for collecting Meta Ads data and updating daily and monthly KPI reports",
+
+    sections: [
+      {
+        number: "01",
+        label: "Project Overview",
+        title: "Automated KPI Updates",
+        paragraphs: [
+          "The workflow runs on a schedule and collects performance data from the Meta Ads API.",
+          "It organizes the data, calculates daily and monthly KPIs, and updates the reporting dashboard in Google Sheets.",
+        ],
+        bullets: [
+          "A scheduled trigger starts the report.",
+          "JavaScript cleans and calculates the data.",
+          "Google Sheets stores the final KPI results.",
+        ],
+        image: "assets/images/automation/zapier/Daily KPI Dashboard -1.JPG",
+        imageAlt:
+          "Zapier reporting workflow with scheduled data collection, calculations, and Google Sheets updates",
+      },
+      {
+        number: "02",
+        label: "Challenge",
+        title: "Keeping Reports Accurate",
+        paragraphs: [
+          "Raw advertising data can contain repeated records and different conversion actions. This can create incorrect totals.",
+          "Daily and monthly reports also need the same campaign names, dates, and calculation rules.",
+        ],
+        bullets: [
+          "Duplicate records could affect totals.",
+          "Conversion actions needed careful filtering.",
+          "Daily and monthly reports needed consistent data.",
+        ],
+        image: "assets/images/automation/zapier/Daily KPI Dashboard -2.JPG",
+        imageAlt:
+          "Zapier workflow showing data collection, record matching, KPI calculations, and reporting steps",
+      },
+      {
+        number: "03",
+        label: "Solution and Workflow",
+        title: "Connected Reporting Steps",
+        paragraphs: [
+          "I configured webhook and JavaScript steps to collect, clean, group, and calculate the advertising data.",
+          "The workflow saves daily results, prepares monthly totals, creates a monthly sheet, and updates the dashboard row.",
+        ],
+        bullets: [
+          "Schedule → request current Meta Ads performance data.",
+          "JavaScript → clean records and calculate daily and monthly KPIs.",
+          "Google Sheets → save results and update the reporting dashboard.",
+        ],
+        image: "assets/images/automation/zapier/Daily KPI Dashboard -3.JPG",
+        imageAlt:
+          "Zapier solution connecting Meta Ads API data, JavaScript calculations, and Google Sheets reporting",
+      },
+      {
+        number: "04",
+        label: "Error Handling and Testing",
+        title: "Checking Data Quality",
+        paragraphs: [
+          "Matching-record and record-count steps help check the available data before calculations continue.",
+          "Recommended checks should compare totals with Meta Ads Manager and confirm that each unique reporting record appears only once.",
+        ],
+        bullets: [
+          "Check the API response and access token.",
+          "Confirm there are no duplicate unique keys.",
+          "Review spend, conversions, and calculated cost metrics.",
+        ],
+        image: "assets/images/automation/zapier/Daily KPI Dashboard -4.JPG",
+        imageAlt:
+          "Zapier validation steps for API responses, duplicate records, KPI totals, and dashboard updates",
+      },
+    ],
+  },
+  xeroTransactionCsvExport: {
+    eyebrow: "Automation Case Study",
+    title: "Xero Transaction CSV Export",
+    intro:
+      "I built a workflow that exports accounting transactions, formats them as a CSV report, and attaches the file to Asana.",
+
+    coverImage:
+      "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+    coverAlt:
+      "Make.com workflow connecting Asana, Xero, Google Sheets, data tools, and file attachment actions",
+
+    sections: [
+      {
+        number: "01",
+        label: "Project Overview",
+        title: "Automatic Report Delivery",
+        paragraphs: [
+          "The workflow starts when an Asana task is marked complete. It then requests transaction data from Xero.",
+          "The records are prepared as a CSV report. The finished file is attached to the completed Asana task.",
+        ],
+        bullets: [
+          "Completed Asana task starts the process.",
+          "Xero provides the transaction records.",
+          "Asana receives the finished CSV file.",
+        ],
+        image:
+          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+        imageAlt:
+          "Make.com scenario for exporting Xero transactions and uploading a CSV file to Asana",
+      },
+      {
+        number: "02",
+        label: "Challenge",
+        title: "Preparing Report-Ready Data",
+        paragraphs: [
+          "The Xero data needed to match the structure of a manually downloaded transaction report.",
+          "Multiple transaction records also needed to be collected, organized, and combined into one file.",
+        ],
+        bullets: [
+          "API data needed consistent columns.",
+          "Many transactions required repeated processing.",
+          "The final file needed the correct Asana task.",
+        ],
+        image:
+          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+        imageAlt:
+          "Project requirements for exporting Xero transaction data and attaching the report to Asana",
+      },
+      {
+        number: "03",
+        label: "Solution and Workflow",
+        title: "Connected Export Process",
+        paragraphs: [
+          "I connected the Asana trigger to a Xero API request and used a router to separate record processing from file creation.",
+          "Google Sheets temporarily stores the rows before a text aggregator prepares the final report for upload.",
+        ],
+        bullets: [
+          "Asana completion → request transaction data from Xero.",
+          "Iterator → add each transaction row to Google Sheets.",
+          "Text aggregator → build and upload the CSV attachment.",
+        ],
+        image:
+          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+        imageAlt:
+          "Make.com workflow showing Xero data retrieval, routing, iteration, aggregation, and Asana upload",
+      },
+      {
+        number: "04",
+        label: "Error Handling and Testing",
+        title: "Checking the Final Export",
+        paragraphs: [
+          "The router, iterator, and delay help control the order of data processing. Temporary Google Sheets values are cleared after the file is uploaded.",
+          "Recommended checks should confirm the Xero response, transaction row count, CSV structure, and Asana attachment.",
+        ],
+        bullets: [
+          "Confirm the completed task starts the scenario.",
+          "Check that every transaction becomes one row.",
+          "Open the CSV and verify the attachment.",
+        ],
+        image:
+          "assets/images/automation/Make/Export Xero Transactions and Upload to Asana.JPG",
+        imageAlt:
+          "Make.com workflow checks for transaction rows, CSV formatting, temporary data cleanup, and Asana attachment",
       },
     ],
   },
@@ -786,66 +1655,66 @@ const automationProjectDetails = {
 const webProjects = [
   {
     title: "Calculator",
-    image: "assets/images/web/calculator-placeholder.svg",
+    image: "assets/images/web/Calculator.jpg",
     description:
-      "A browser-based calculator created with HTML, CSS, and JavaScript.",
+      "A browser-based calculator built with HTML, CSS, and JavaScript for clear everyday calculations.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/calculator/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/calculator",
   },
   {
     title: "Rock, Paper and Scissors",
-    image: "assets/images/web/rock-paper-scissors-placeholder.svg",
+    image: "assets/images/web/Rock, Paper and Scissor.jpg",
     description:
-      "A browser game based on the classic rock, paper, and scissors rules.",
+      "An interactive browser game implementing the classic rock, paper, and scissors rules with JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/rock-paper-scissor/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/rock-paper-scissor",
   },
   {
     title: "Etch A Sketch",
-    image: "assets/images/web/etch-a-sketch-placeholder.svg",
+    image: "assets/images/web/Etch A Sketch.jpg",
     description:
-      "An interactive browser drawing grid built with front-end web technologies.",
+      "An interactive drawing grid demonstrating dynamic DOM updates and responsive front-end behavior.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/Etch-a-Sketch/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/Etch-a-Sketch",
   },
   {
     title: "To-Do List",
-    image: "assets/images/web/todo-list-placeholder.svg",
+    image: "assets/images/web/To Do List.jpg",
     description:
-      "A browser-based project for organizing and managing to-do items.",
+      "A browser-based task organizer for creating, tracking, and managing to-do items.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/odin-toDoList/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/odin-toDoList",
   },
   {
     title: "Tic-Tac-Toe",
-    image: "assets/images/web/tic-tac-toe-placeholder.svg",
+    image: "assets/images/web/Tic Tac Toe.jpg",
     description:
-      "A browser implementation of the classic two-player tic-tac-toe game.",
+      "A browser implementation of the classic two-player tic-tac-toe game using HTML, CSS, and JavaScript.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/tic-tac-toe/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/tic-tac-toe",
   },
   {
     title: "Restaurant Website",
-    image: "assets/images/web/restaurant-placeholder.svg",
+    image: "assets/images/web/Restaurant Page.jpg",
     description:
-      "A responsive restaurant-themed website built with HTML, CSS, and JavaScript.",
+      "A responsive restaurant website demonstrating structured content, modern CSS, and JavaScript interactions.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/odin-restaurant/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/odin-restaurant",
   },
   {
     title: "Admin Dashboard",
-    image: "assets/images/web/admin-dashboard-placeholder.svg",
+    image: "assets/images/web/Admin Dashboard.jpg",
     description:
-      "An admin dashboard interface focused on layout, structure, and responsive styling.",
+      "A responsive admin dashboard interface focused on organized information, reusable layout patterns, and clear visual hierarchy.",
     technologies: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://lian-143.github.io/Admin-Dashboard/",
-    githubUrl: "",
+    githubUrl: "https://github.com/lian-143/Admin-Dashboard",
   },
 ];
 
@@ -857,45 +1726,52 @@ const webProjects = [
 const certifications = [
   {
     title: "WordPress Certificate",
-    issuer: "Issuing Organization",
-    date: "Completion Date",
-    image: "assets/images/certificates/wordpress-placeholder.svg",
-    credentialUrl: "#",
+    issuer: "Udemy",
+    date: "June 21, 2026",
+    image: "assets/images/Certificates/Wordpress.jpg",
+    credentialUrl:
+      "https://www.udemy.com/certificate/UC-9d97e410-a933-44e5-9d9c-5f05bed4a2f4/",
   },
   {
     title: "GoHighLevel Certificate",
-    issuer: "Issuing Organization",
-    date: "Completion Date",
-    image: "assets/images/certificates/gohighlevel-placeholder.svg",
-    credentialUrl: "#",
+    issuer: "Tara AI Community+",
+    date: "July 13, 2026",
+    image: "assets/images/certificates/Leanne_Frances_Ganado_HighLevel.jpg",
+    credentialUrl:
+      "https://my-certificates.com/certificates/6a53d29281683ab6396b999f",
   },
   {
     title: "Prompt Engineering Certificate",
-    issuer: "Issuing Organization",
-    date: "Completion Date",
-    image: "assets/images/certificates/prompt-engineering-placeholder.svg",
-    credentialUrl: "#",
+    issuer: "Tara AI Community+",
+    date: "July 6, 2026",
+    image:
+      "assets/images/certificates/Leanne_Frances_Ganado_Prompt_Engineering.jpg",
+    credentialUrl:
+      "https://my-certificates.com/certificates/6a4b11b181683ab6396558bf",
   },
   {
     title: "n8n Certificate",
-    issuer: "Issuing Organization",
-    date: "Completion Date",
-    image: "assets/images/certificates/n8n-placeholder.svg",
-    credentialUrl: "#",
+    issuer: "Tara AI Community+",
+    date: "June 28, 2026",
+    image: "assets/images/certificates/Leanne_Frances_Ganado_n8n.jpg",
+    credentialUrl:
+      "https://my-certificates.com/certificates/6a4138108ca737db37390d0a",
   },
   {
     title: "Make.com Certificate",
-    issuer: "Issuing Organization",
-    date: "Completion Date",
-    image: "assets/images/certificates/make-placeholder.svg",
-    credentialUrl: "#",
+    issuer: "Tara AI Community+",
+    date: "January 8, 2026",
+    image: "assets/images/certificates/Leanne_Frances_Ganado_Make.com.jpg",
+    credentialUrl:
+      "https://my-certificates.com/certificates/695fb0b4d99ce93dffb50b9f",
   },
   {
     title: "Zapier Certificate",
-    issuer: "Issuing Organization",
-    date: "Completion Date",
-    image: "assets/images/certificates/zapier-placeholder.svg",
-    credentialUrl: "#",
+    issuer: "Tara AI Community+",
+    date: "January 2, 2026",
+    image: "assets/images/certificates/Leanne_Frances_Ganado_Zapier.png",
+    credentialUrl:
+      "https://my-certificates.com/certificates/6957b866b625eda4c08daafd",
   },
 ];
 
@@ -917,16 +1793,21 @@ let projectModal = null;
 let projectModalContent = null;
 let projectModalCloseButton = null;
 let lastModalTrigger = null;
+let projectImageViewer = null;
+let projectImageViewerImage = null;
+let projectImageViewerCaption = null;
+let projectImageViewerCloseButton = null;
+let lastImageViewerTrigger = null;
 const reducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
 ).matches;
 
 // Include each article in the animated phrase so both “a” and “an” are typed.
 const roleTitles = [
-  "an AI Automation Specialist",
+  "an AI Automation Engineer",
   "a CRM Developer",
-  "an AI Agent Builder",
-  "Front-End Developer",
+  "an AI Agent Developer",
+  "a WordPress Developer",
 ];
 
 function applyProfilePhoto() {
@@ -957,19 +1838,20 @@ function renderToolTrack(track, items) {
         .map(
           (tool) => `
         <div class="tool-logo-card" role="listitem" title="${tool.name}">
-          <span class="tool-logo-image-wrap" aria-hidden="true">
+          <span class="tool-logo-image-wrap">
             <img
               class="tool-logo-image"
               src="${tool.image}"
-              alt=""
+              alt="${tool.alt}"
               width="44"
               height="44"
-              loading="eager"
+              loading="lazy"
               decoding="async"
+              fetchpriority="low"
               data-fallback="${FALLBACK_IMAGE}"
             >
           </span>
-          <span class="tool-logo-name">${tool.name}</span>
+          <span class="tool-logo-name" aria-hidden="true">${tool.name}</span>
         </div>
       `,
         )
@@ -1068,7 +1950,7 @@ function createProjectLink(label, url, secondary = false) {
 }
 
 function createProjectDetailsButton(label, projectId) {
-  return `<button class="button button-secondary project-details-button" type="button" data-project-details="${projectId}" aria-haspopup="dialog">${label}</button>`;
+  return `<button class="button project-details-button" type="button" data-project-details="${projectId}" aria-haspopup="dialog">${label}</button>`;
 }
 
 function attachImageFallbacks(scope = document) {
@@ -1097,9 +1979,12 @@ function renderAutomationProjects(filter = "All") {
         <img
           class="project-image"
           src="${project.image}"
-          alt="Placeholder preview for ${project.title}"
+          alt="${project.title} workflow screenshot"
+          width="1280"
+          height="800"
           loading="lazy"
           decoding="async"
+          fetchpriority="low"
           data-fallback="${FALLBACK_IMAGE}"
         >
       </div>
@@ -1107,9 +1992,8 @@ function renderAutomationProjects(filter = "All") {
         <span class="project-category">${project.category}</span>
         <h4>${project.title}</h4>
         <p>${project.description}</p>
-        <div class="tag-list" aria-label="Tools used">${createTags(project.tools)}</div>
+        <div class="tag-list" aria-label="Project tags">${createTags(project.tags)}</div>
         <div class="project-actions">
-          ${createProjectLink("View Project", project.projectUrl)}
           ${createProjectDetailsButton(project.secondaryLabel || "View Case Study", project.id)}
         </div>
       </div>
@@ -1158,6 +2042,75 @@ function createProjectModal() {
   });
 }
 
+function createProjectImageViewer() {
+  const viewer = document.createElement("div");
+  viewer.className = "project-image-viewer";
+  viewer.id = "project-image-viewer";
+  viewer.hidden = true;
+  viewer.innerHTML = `
+    <div class="project-image-viewer-backdrop" data-image-viewer-close aria-hidden="true"></div>
+    <div class="project-image-viewer-dialog" role="dialog" aria-modal="true" aria-labelledby="project-image-viewer-caption" tabindex="-1">
+      <button class="project-image-viewer-close" type="button" data-image-viewer-close aria-label="Close full project image">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="project-image-viewer-stage">
+        <img
+          class="project-image-viewer-image"
+          src="${FALLBACK_IMAGE}"
+          alt=""
+          decoding="async"
+          data-fallback="${FALLBACK_IMAGE}"
+        >
+      </div>
+      <p class="project-image-viewer-caption" id="project-image-viewer-caption"></p>
+    </div>
+  `;
+
+  document.body.appendChild(viewer);
+  projectImageViewer = viewer;
+  projectImageViewerImage = viewer.querySelector(".project-image-viewer-image");
+  projectImageViewerCaption = viewer.querySelector(
+    ".project-image-viewer-caption",
+  );
+  projectImageViewerCloseButton = viewer.querySelector(
+    ".project-image-viewer-close",
+  );
+  attachImageFallbacks(viewer);
+
+  viewer.addEventListener("click", (event) => {
+    if (event.target.closest("[data-image-viewer-close]")) {
+      closeProjectImageViewer();
+    }
+  });
+}
+
+function createProjectImageButton(image, alt, loading = "lazy") {
+  const encodedImage = encodeURIComponent(image || FALLBACK_IMAGE);
+  const encodedAlt = encodeURIComponent(alt || "Project image");
+
+  return `
+    <button
+      class="project-image-trigger"
+      type="button"
+      data-full-image="${encodedImage}"
+      data-full-image-alt="${encodedAlt}"
+      aria-label="Open full image: ${alt || "Project image"}"
+    >
+      <img
+        src="${image || FALLBACK_IMAGE}"
+        alt="${alt || "Project image"}"
+        loading="${loading}"
+        decoding="async"
+        fetchpriority="${loading === "eager" ? "high" : "low"}"
+        width="1600"
+        height="1000"
+        data-fallback="${FALLBACK_IMAGE}"
+      >
+      <span class="project-image-trigger-label" aria-hidden="true">View full image</span>
+    </button>
+  `;
+}
+
 function renderProjectModalContent(project, details) {
   // The modal is intentionally limited to the first four project-detail sections.
   const sections = (details.sections || [])
@@ -1177,7 +2130,7 @@ function renderProjectModalContent(project, details) {
           ${bullets}
         </div>
         <figure class="project-detail-visual">
-          <img src="${section.image}" alt="${section.imageAlt}" loading="lazy" decoding="async" data-fallback="${FALLBACK_IMAGE}">
+          ${createProjectImageButton(section.image, section.imageAlt)}
         </figure>
       </section>
     `;
@@ -1191,11 +2144,11 @@ function renderProjectModalContent(project, details) {
           <p class="section-label">${details.eyebrow}</p>
           <h2 id="project-modal-title">${details.title}</h2>
           <p class="project-modal-intro">${details.intro}</p>
-          <p class="project-modal-tools-label">Tools used</p>
-          <div class="tag-list" aria-label="Project tools">${createTags(project.tools)}</div>
+          <p class="project-modal-tools-label">Tags</p>
+          <div class="tag-list" aria-label="Project tags">${createTags(project.tags)}</div>
         </div>
         <figure class="project-modal-cover">
-          <img src="${details.coverImage}" alt="${details.coverAlt}" decoding="async" data-fallback="${FALLBACK_IMAGE}">
+          ${createProjectImageButton(details.coverImage, details.coverAlt, "eager")}
         </figure>
       </header>
 
@@ -1212,6 +2165,7 @@ function openProjectModal(projectId, trigger) {
   if (!project || !details) return;
 
   if (!projectModal) createProjectModal();
+  if (!projectImageViewer) createProjectImageViewer();
   lastModalTrigger = trigger || document.activeElement;
   renderProjectModalContent(project, details);
   projectModal.hidden = false;
@@ -1229,6 +2183,10 @@ function openProjectModal(projectId, trigger) {
 function closeProjectModal() {
   if (!projectModal || projectModal.hidden) return;
 
+  if (projectImageViewer && !projectImageViewer.hidden) {
+    closeProjectImageViewer(false);
+  }
+
   projectModal.classList.remove("is-open");
   document.body.classList.remove("modal-open");
 
@@ -1243,11 +2201,46 @@ function closeProjectModal() {
   );
 }
 
-function trapProjectModalFocus(event) {
-  if (!projectModal || projectModal.hidden || event.key !== "Tab") return;
+function openProjectImageViewer(imageSrc, imageAlt, trigger) {
+  if (!projectImageViewer) createProjectImageViewer();
+
+  lastImageViewerTrigger = trigger || document.activeElement;
+  projectImageViewerImage.dataset.fallbackApplied = "false";
+  projectImageViewerImage.src = imageSrc || FALLBACK_IMAGE;
+  projectImageViewerImage.alt = imageAlt || "Full project image";
+  projectImageViewerCaption.textContent = imageAlt || "Full project image";
+  projectImageViewer.hidden = false;
+
+  requestAnimationFrame(() => {
+    projectImageViewer.classList.add("is-open");
+    projectImageViewerCloseButton?.focus();
+  });
+}
+
+function closeProjectImageViewer(restoreFocus = true) {
+  if (!projectImageViewer || projectImageViewer.hidden) return;
+
+  projectImageViewer.classList.remove("is-open");
+
+  window.setTimeout(
+    () => {
+      projectImageViewer.hidden = true;
+      projectImageViewerImage.src = FALLBACK_IMAGE;
+      projectImageViewerImage.alt = "";
+      projectImageViewerCaption.textContent = "";
+
+      if (restoreFocus) lastImageViewerTrigger?.focus?.();
+      lastImageViewerTrigger = null;
+    },
+    reducedMotion ? 0 : 160,
+  );
+}
+
+function trapFocusInside(container, event) {
+  if (!container || container.hidden || event.key !== "Tab") return;
 
   const focusable = [
-    ...projectModal.querySelectorAll(
+    ...container.querySelectorAll(
       'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])',
     ),
   ].filter((element) => !element.hidden && element.offsetParent !== null);
@@ -1267,6 +2260,7 @@ function trapProjectModalFocus(event) {
 
 function initializeProjectModal() {
   createProjectModal();
+  createProjectImageViewer();
 
   automationGrid?.addEventListener("click", (event) => {
     const trigger = event.target.closest("[data-project-details]");
@@ -1274,12 +2268,38 @@ function initializeProjectModal() {
     openProjectModal(trigger.dataset.projectDetails, trigger);
   });
 
+  projectModal?.addEventListener("click", (event) => {
+    const imageTrigger = event.target.closest("[data-full-image]");
+    if (!imageTrigger) return;
+
+    const imageSrc = decodeURIComponent(imageTrigger.dataset.fullImage || "");
+    const imageAlt = decodeURIComponent(
+      imageTrigger.dataset.fullImageAlt || "",
+    );
+    openProjectImageViewer(imageSrc, imageAlt, imageTrigger);
+  });
+
   document.addEventListener("keydown", (event) => {
+    if (
+      event.key === "Escape" &&
+      projectImageViewer &&
+      !projectImageViewer.hidden
+    ) {
+      closeProjectImageViewer();
+      return;
+    }
+
     if (event.key === "Escape" && projectModal && !projectModal.hidden) {
       closeProjectModal();
       return;
     }
-    trapProjectModalFocus(event);
+
+    if (projectImageViewer && !projectImageViewer.hidden) {
+      trapFocusInside(projectImageViewer, event);
+      return;
+    }
+
+    trapFocusInside(projectModal, event);
   });
 }
 
@@ -1294,9 +2314,12 @@ function renderWebProjects() {
         <img
           class="project-image"
           src="${project.image}"
-          alt="Placeholder screenshot for ${project.title}"
+          alt="${project.title} interface screenshot"
+          width="1280"
+          height="800"
           loading="lazy"
           decoding="async"
+          fetchpriority="low"
           data-fallback="${FALLBACK_IMAGE}"
         >
       </div>
@@ -1329,9 +2352,12 @@ function renderCertifications() {
         <img
           class="certificate-image"
           src="${certificate.image}"
-          alt="Placeholder image for ${certificate.title}"
+          alt="${certificate.title} certificate"
+          width="1280"
+          height="800"
           loading="lazy"
           decoding="async"
+          fetchpriority="low"
           data-fallback="${FALLBACK_IMAGE}"
         >
       </div>

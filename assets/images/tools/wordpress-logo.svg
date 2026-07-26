@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">WordPress</title>
+  <desc id="desc">Local transparent SVG mark for WordPress.</desc>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#21759B" stroke-width="4"/><path fill="#21759B" d="M13 24h10v3h-3l8 22 5-14-3-8h-3v-3h13v3h-3l8 22 6-19c2-7-2-10-4-12a20 20 0 1 0-28 30L13 27h-2Z"/>
+</svg>

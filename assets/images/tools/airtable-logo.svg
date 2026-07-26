@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Airtable</title>
+  <desc id="desc">Local transparent SVG mark for Airtable.</desc>
+  <path fill="#FCB400" d="m7 16 24-10 24 10-24 10Z"/><path fill="#18BFFF" d="m7 21 21 9v27L7 48Z"/><path fill="#F82B60" d="m34 30 21-9v27l-21 9Z"/>
+</svg>
